@@ -75,26 +75,48 @@
       <!-- Accordion Entry One Lower Settings -->
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#Accordion">
           <div class="card-body">
-            <strong>For Android phone:</strong>
-            <ol>
-              <li>Find the application "SIM Toolkit" on your device</li> 
-              <li>Select Multi IMSI</li> 
-              <li>Select Manual Switch</li> 
-              <li>Select Roaming</li> 
-              <li>Restart your device</li> 
-              <li>If it still doesn't connect to a Mobile Network, go to Mobile Settings --> Mobile Network --> Network Operators and select manually an operator</li> 
-            </ol>
 
-            <strong>For iOS Device:</strong>
-            <ol>
-              <li>Go to Settings</li>
-              <li>Find Mobile Data</li>
-              <li>SIM Applications</li> 
-              <li>Select Multi IMSI</li> 
-              <li>Multi SIM</li> 
-              <li>Roaming</li> 
-              <li>If it still doesn't connect to a Mobile Network, go to Mobile Settings --> Mobile Network --> Network Operators and select manually an operator.</li>
-            </ol> 
+            <!-- Android Table -->
+            <Table>
+              <th><strong>For Android phone:</strong></th>
+              <tr>
+                <td>
+
+                  <!-- Android Table Entries -->
+                  <ol>
+                    <li>Find the application "SIM Toolkit" on your device</li> 
+                    <li>Select Multi IMSI</li> 
+                    <li>Select Manual Switch</li> 
+                    <li>Select Roaming</li> 
+                    <li>Restart your device</li> 
+                    <li>If it still doesn't connect to a Mobile Network, go to Mobile Settings --> Mobile Network --> Network Operators and select manually an operator</li> 
+                  </ol>
+
+                </td>
+              </tr>
+            </Table>
+
+            <!-- iOS Table -->
+            <table>
+              <th><strong>For iOS Device:</strong></th>
+              <tr>
+                <td>
+
+                  <!-- Ios Table Entries-->
+                  <ol>
+                    <li>Go to Settings</li>
+                    <li>Find Mobile Data</li>
+                    <li>SIM Applications</li> 
+                    <li>Select Multi IMSI</li> 
+                    <li>Multi SIM</li> 
+                    <li>Roaming</li> 
+                    <li>If it still doesn't connect to a Mobile Network, go to Mobile Settings --> Mobile Network --> Network Operators and select manually an operator.</li>
+                  </ol>
+                  
+                </td>
+              </tr>
+            </table>
+            
           </div>
         </div>
       </div>
@@ -114,77 +136,82 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#Accordion">
           <div class="card-body">
             
-            <table>
+            <!-- Free Telephony Features Table -->
+            <table border="1">
+
+              <th class="TableTitle" colspan="2"> Free Telephony Features (included in the standard package) </th>
               <tr>
-                <th colspan="2">Free Telephony Features (included in the standard package)</th>
+                
+                <td>
+                  <!-- Free Telephony Feature Entries Left Side -->
+                  <ul>
+                    <li class="TableFormatting">Caller ID</li>
+                    <li>Call forwarding unconditional</li>
+                    <li>Call forwarding on busy</li>
+                    <li>Call forwarding on "No Answer"</li>
+                    <li>Mobile Remaining</li>              
+                  </ul>
+                </td>
+
+                <td>
+                  <!-- Free Telephony Feature Entries Right Side -->
+                  <ul>
+                    <li class="Tablefixing">Always Enabled	[<strong>Cannot</strong> be disabled]</li>
+                    <li>*21[<strong>Telephone number</strong>]#	#21#</li>
+                    <li>>*22[<strong>Telephone number</strong>]#	#22#</li>
+                    <li>*24[<strong>Telephone number</strong>]#	#24#</li>
+                    <li>>#101#</li>
+                  </ul>
+                </td>
+
               </tr>
-              <tr>
-                <td class="TableFormatting"> Caller ID</td>
-                <td> Always Enabled	[<strong>Cannot</strong> be disabled]</td>
-              </tr>
-              <tr>
-                <td>Call forwarding unconditional</td>
-                <td>*21[<strong>Telephone number</strong>]#	#21#</td>
-              </tr>
-              <tr>
-                <td>Call forwarding on busy</td>
-                <td>*22[<strong>Telephone number</strong>]#	#22#</td>
-              </tr>
-              <tr>
-                <td>Call forwarding on "No Answer"</td>
-                <td>*24[<strong>Telephone number</strong>]#	#24#</td>
-              </tr>
-              <tr>
-                <td>Mobile Remaining</td>
-                <td>#101#</td>
-              </tr>
+
             </table>
+
             <br>
-            <table>
-              <tr>
-                <th>Additional Telephony Features</th>
-              </tr>
-              <tr>
-                <td class="TableFormatting"> Do Not Disturb</td>
-                <td>*26#</td>
-              </tr>
-              <tr>
-                <td>Call Waiting</td>
-                <td>*43#	#43#</td>
-              </tr>
-              <tr>
-                <td>Caller ID Delivery</td>
-                <td>on Call Waiting	</td>
-              </tr>
-              <tr>
-                <td>Three way Calling</td>
-                <td>*44#	#44#</td>
-              </tr>
-              <tr>
-                <td>Remote call forwarding</td>
-                <td>Call 22252525 & Follow instructions</td>
-              </tr>
-              <tr>
-                <td>Wake Up</td>
-                <td>*55 [hh:mm]	#55#</td>
-              </tr>
-              <tr>
-                <td>Anonymous Call Rejection</td>
-                <td>*28#	#28#</td>
-              </tr>
-              <tr>
-                <td>Block Premium Numbers (900/909)</td>
-                <td>Call 130</td>
-              </tr>
-              <tr>
-                <td>Block International Calls</td>
-                <td>Must call 130></td>
-              </tr>
-              <tr>
-                <td>Clear all the features</td>
-                <td>CLIR – *31* [<strong>Telephone number</strong>]</td>
-              </tr>
-            </table>								 										
+
+            <!-- Additional Telephony Features Table -->
+            <table border="1"> 
+              
+                <th class="TableTitle" colspan="2"> Additional Telephony Features </th>
+                <tr>
+                  <td>
+
+                    <!-- Additional Telephony Features Left Side -->
+                    <ul>
+                      <li class="TableFormatting">Do Not Disturb</li>
+                      <li>Call Waiting</li>
+                      <li>Caller ID Delivery</li>
+                      <li>Three way Calling</li>
+                      <li>Remote call forwarding</li>
+                      <li>Wake Up</li>
+                      <li>Anonymous Call Rejection</li>
+                      <li>Block Premium Numbers (900/909)</li>
+                      <li>Block International Calls</li>
+                      <li>Clear all the features</li>
+                    </ul>
+                  </td>
+
+                  <td>
+
+                    <!-- Additional Telephony Features Right Side -->
+                    <ul>
+                      <li class="Tablefixing">*26#</li>
+                      <li>*43#	#43#</li>
+                      <li>on Call Waiting</li>
+                      <li>*44#	#44#</li>
+                      <li>Call 22252525 & Follow instructions</li>
+                      <li>*55 [hh:mm]	#55#</li>
+                      <li>*28#	#28#</li>
+                      <li>Call 130</li>
+                      <li>Must Call 130</li>
+                      <li>CLIR – *31* [<strong>Telephone number</strong>]</li>
+                    </ul>
+                  </td>
+                </tr>
+
+            </table>
+
           </div>
         </div>
       </div>

@@ -8,7 +8,14 @@
     font-size: 40px;
     font-weight: 450;
 }
-.TableFormatting{
-    width: 300px;
+.TableFormatting {
+    width: 260px;
 }
+.Tablefixing {
+    width: 260px;
+}
+.TableTitle{
+    text-align: center;
+}
+
 
