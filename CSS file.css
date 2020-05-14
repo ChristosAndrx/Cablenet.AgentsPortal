@@ -1,28 +1,20 @@
-.navbar {
+.navbar{
     background-color:  #5F2C88!important;
 }
-.CablenetLogo {
+.CablenetLogo{
     width: 250px;
 }
-.nav-link {
+.nav-link{
     font-size: 35px;
     font-weight: 450;
 }
 .TableFormatting {
-    width: 260px;
-}
-.Tablefixing {
-    width: 260px;
+    width: 320px;
 }
 .TableTitle{
     text-align: center;
 }
-.ModemTableTitle{
-    text-align: center;
-}
-.ModemTableTop{
+.ModemTable{
     width: 200px;
 }
-.ModemTableBottom{
-    width: 200px;
-}
+
