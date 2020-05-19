@@ -20,3 +20,15 @@
 #PhoneButton{
     width: 150px;
 }
+#NormalButton{
+    width: 150px;
+}
+#NormalButton2{
+    width: 190px;
+}
+.popover{
+    max-width: max-content;
+}
+.alert{
+    margin-bottom: 0px;
+}
