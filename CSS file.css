@@ -5,7 +5,7 @@
     width: 250px;
 }
 .nav-link{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 450;
 }
 .TableFormatting {
@@ -31,4 +31,25 @@
 }
 .alert{
     margin-bottom: 0px;
+}
+#myInput2{
+    display: inline-block;
+    vertical-align: top;
+    height: 500px;
+    max-width: max-content;
+}
+#myInput3{
+    display: inline-block;
+    vertical-align: top;
+    height: 500px;
+    max-width: max-content;
+}
+#basic-addon1{
+    align-self: center;
+    max-width: 100%
+}
+#ContainMe{
+    margin-right: 5px;
+    margin-left: 1px;
+    max-width: 100%;
 }

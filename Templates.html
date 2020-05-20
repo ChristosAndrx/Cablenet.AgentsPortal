@@ -7,27 +7,109 @@
 	</head>
 	<body>
 		<!--  -->
-		<nav class="navbar navbar-default navbar-expand-xl navbar-light bg-light">		
-			<a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<nav class="navbar navbar-default navbar-expand-xl navbar-light bg-light">		
+				<a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--  -->
+				<div class="collapse navbar-collapse"id="navbarNav">
+					<ul class="navbar-nav nav-fill w-100">
+						<li class="nav-item"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="Modems.html">Modems</a></li>
+						<li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>
+						<li class="nav-item"><a class="nav-link" href="SmartPhones.html">SmartPhones</a></li>
+						<li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>
+						<li class="nav-item"><a class="nav-link" href="Business.html">Business</a></li>      
+					</ul>
+				</div>
+			</nav>
 			<!--  -->
-			<div class="collapse navbar-collapse"id="navbarNav">
-				<ul class="navbar-nav nav-fill w-100">
-					<li class="nav-item"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="Modems.html">Modems</a></li>
-					<li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>
-					<li class="nav-item"><a class="nav-link" href="SmartPhones.html">SmartPhones</a></li>
-					<li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>
-					<li class="nav-item"><a class="nav-link" href="Business.html">Business</a></li>      
-				</ul>
+			<div id="ContainMe" class="container">
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				  <span class="form-control" id="basic-addon1">CC</span>
+				</div>
+				<input type="text" class="form-control" id="myInput" value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
+				<button onclick="myFunction()">Copy text</button>
 			</div>
-		</nav>
-		<!--  -->
+			<!--  -->
+			
+			<p type="text" class="form-control" id="myInput3" readonly>
+				<span class="form-control" id="basic-addon1">Fault Ticket</span><br>
+				<span class="form-control" id="basic-addon1">No CC</span><br>
+				Ticket Title: [<strong>Level</strong>] [<strong>SLA</strong>] [<strong>Issue Description</strong>]
+				<br><br>
+				<strong> Issue: </strong>
+				<br><br>
+				<strong> USSNR: </strong>
+				<br>
+				<strong>USPwr: </strong>
+				<br>
+				<strong>DSPwr: </strong>
+				<br>
+				<strong>DSSNR: </strong>   
+				<br><br>
+				<strong>Modem /Decoder: </strong>
+				<br><br>
+				<strong>Customer Name: </strong>
+				<br> 
+				<strong>Customer Number:</strong> 
+				<br><br>
+				The customer approved potential charges.
+			</p>
+			<!--  -->
+			<p type="text" class="form-control" id="myInput2" readonly>
+				<span class="form-control" id="basic-addon1">Static IP Request</span><br>
+				<span class="form-control" id="basic-addon1">CC: an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net</span><br>
+				
+				Ticket Title: [<strong>Static IP Request</strong>] <br><br>
+				
+				Customer below has requested a retail static IP for remote access to their server <br><br>
+				
+				Product added on SLA. <br><br>
+				
+				<strong>Number</strong>: <br>
+				<strong>Account</strong>: <br>
+				<strong>Contact</strong>: <br><br>
+
+				Please proceed accordingly and let me know. <br><br>
+				Best regards
+			</p>
+			<!--  -->
+			<p type="text" class="form-control" id="myInput2" readonly>
+				<span class="form-control" id="basic-addon1">High Utilization</span><br>
+				<span class="form-control" id="basic-addon1">CC: an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net</span><br>
+				Ticket Title: [<strong>High Utilization </strong>] <br><br>
+				High utilization on [<strong>Node</strong>] [<strong>Card</strong>] at [<strong>Time</strong>] <br><br>
+
+				Dear Engineers,<br><br>
+				High utilization on [<strong>Node</strong>] [<strong>Card</strong>] at [<strong>Time</strong>] <br>
+
+				[SLA: <strong>SLA</strong>]	<br><br>
+				[<Strong>CMTS Command & Results</Strong>] <br><br>
+				cmts1.lar> show interface utilization | include 15/ <br>
+				15/0         1      55.62   40.04    72%             -      - <br>
+				15/1         1      55.62   40.04    72%             -      - <br>
+				...
+			</p>
+		</div>
 		<!--  -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script>
+			function myFunction() {
+  			/* Get the text field */
+  			var copyText = document.getElementById("myInput");
+
+  			/* Select the text field */
+  			copyText.select();
+
+  			/* Copy the text inside the text field */
+  			document.execCommand("copy");
+			}
+		</script>
 	</body>
 </html>
