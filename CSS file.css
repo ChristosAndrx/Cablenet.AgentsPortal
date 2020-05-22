@@ -65,7 +65,14 @@
     width: max-content;
     max-width: 365px;
     height: 600px;
-    max-height: 600px;
+    max-height: auto;
     margin-bottom: 10px;
-    
+}
+.alert{
+    width: 100%;
+}
+#CardBodyTesting{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
 }
