@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Templates</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="CSS file.css">
-	</head>
-	<body>
-		<!--  -->
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Templates</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+			<link rel="stylesheet" href="CSS file.css">
+		</head>
+		<body>
 			<nav class="navbar navbar-default navbar-expand-xl navbar-light bg-light">		
 				<a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,91 +24,319 @@
 				</div>
 			</nav>
 			<!--  -->
-			<div id="ContainMe" class="container">
-
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
-				  <span class="form-control" id="basic-addon1">CC</span>
+			<div id="MainContainer_Templates" class="container">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="form-control" id="MainTitle_Templates">CC</span>
+					</div>
+					<input type="text" class="form-control" id="myInput" value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
+					<button onclick="myFunction()">Copy text</button>
 				</div>
-				<input type="text" class="form-control" id="myInput" value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
-				<button onclick="myFunction()">Copy text</button>
 			</div>
 			<!--  -->
-			
-			<p type="text" class="form-control" id="myInput3" readonly>
-				<span class="form-control" id="basic-addon1">Fault Ticket</span><br>
-				<span class="form-control" id="basic-addon1">No CC</span><br>
-				Ticket Title: [<strong>Level</strong>] [<strong>SLA</strong>] [<strong>Issue Description</strong>]
-				<br><br>
-				<strong> Issue: </strong>
-				<br><br>
-				<strong> USSNR: </strong>
-				<br>
-				<strong>USPwr: </strong>
-				<br>
-				<strong>DSPwr: </strong>
-				<br>
-				<strong>DSSNR: </strong>   
-				<br><br>
-				<strong>Modem /Decoder: </strong>
-				<br><br>
-				<strong>Customer Name: </strong>
-				<br> 
-				<strong>Customer Number:</strong> 
-				<br><br>
-				The customer approved potential charges.
-			</p>
+			<div id="MainContainer_Templates2" class="container">
+
+				<div id="testing" class="card">
+					<div class="card-header">Fault Fault</div>
+					<div class="card-body">
+						<p class="card-text">
+							Issue:
+							<br><br>	
+							USSNR
+							<br>
+							USPwr
+							<br>
+							DSPwr
+							<br>
+							DSSNR    
+							<br><br>
+							Modem /Decoder:
+							<br><br>
+							Name: 
+							<br>
+							Number: 
+							<br><br>
+							The customer approved any potential charges.
+						</p>
+					</div>
+				</div>	
+
+				<!--  -->
+
+				<div id="testing" class="card">
+					<div class="card-header">Static IP Request</div>
+					<div class="card-body">
+						<p class="card-text">					
+							an.andreou@cablenetcy.net
+							<br>
+							ts@cablenetcy.net
+							<br>
+							c.aristidou@cablenetcy.net
+							<br><br>
+							Static IP Request
+							<br><br>
+							Customer below has requested a retail static IP for remote access to their server
+							<br><br>
+							Product added on SLA.
+							<br><br>
+							Number: 
+							<br>
+							Account:
+							<br> 
+							Contact: 
+							<br><br>
+							Please proceed accordingly and let me know.
+							<br>
+						</p>
+					</div>
+				</div>
+
+				<!--  -->
+					
+				<div id="testing" class="card">
+					<div class="card-header">High Utilization Email</div>
+					<div class="card-body">
+						<p class="card-text">					
+							High utilization on S1-16 card 8/ at 21:30
+							<br><br>
+							an.andreou@cablenetcy.net
+							<br>
+							ts@cablenetcy.net
+							<br>
+							engineers@cablenetcy.net
+							<br><br>
+							Dear Engineers,
+							<br><br>
+							High utilization on L1-27 card 8/ at 20:05
+							<br><br>
+							SLA:20004378
+							<br><br>
+							cmts1.lar> show interface utilization | include 15/
+							<br>
+							15/0         1      55.62   40.04    72%             -      -
+							<br>
+							15/1         1      55.62   40.04    72%             -      -
+							<br>
+							15/2         1      55.62   40.04    72%             -      -
+						</p>
+					</div>
+				</div>
+				<div id="testing" class="card">
+					<div class="card-header">Video Issue Ticket</div>
+					<div class="card-body">
+						<p class="card-text">					
+							Dear Video,
+							<br><br>
+							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
+							following message:
+							<br>
+							"<strong>Error Message</strong>".
+							<br><br>
+							We tried reproducing the error but everything was working on our side.
+							<br><br>
+							We proceeded with:
+							<br><br>
+							1) Factory reset (Modem & Decoder) 
+							<br>
+							2) Replaced the ethernet cable & Modem ethernet port
+							<br>
+							3) Made sure the decoder's directly connected on the modem
+							<br>
+							4) Conax (Pair & Sync) and Vod (Sync & Channel Sync)
+							<br><br>
+							Please investigate and inform me on how to proceed.
+						</p>
+					</div>
+				</div>
+
+				<!--  -->
+
+				<div id="testing" class="card">
+					<div class="card-header">Static IP Request</div>
+					<div class="card-body">
+						<p class="card-text">					
+							an.andreou@cablenetcy.net
+							<br>
+							ts@cablenetcy.net
+							<br>
+							c.aristidou@cablenetcy.net
+							<br><br>
+							Static IP Request
+							<br><br>
+							Customer below has requested a retail static IP for remote access to their server
+							<br><br>
+							Product added on SLA.
+							<br><br>
+							Number: 
+							<br>
+							Account:
+							<br> 
+							Contact: 
+							<br><br>
+							Please proceed accordingly and let me know.
+							<br>
+						</p>
+					</div>
+				</div>
+
+				<div id="testing" class="card">
+					<div class="card-header">Fault Fault</div>
+					<div class="card-body">
+						<p class="card-text">
+							Issue:
+							<br><br>	
+							USSNR
+							<br>
+							USPwr
+							<br>
+							DSPwr
+							<br>
+							DSSNR    
+							<br><br>
+							Modem /Decoder:
+							<br><br>
+							Name: 
+							<br>
+							Number: 
+							<br><br>
+							The customer approved any potential charges.
+						</p>
+					</div>
+				</div>	
+
+				<!--  -->
+
+				<div id="testing" class="card">
+					<div class="card-header">Static IP Request</div>
+					<div class="card-body">
+						<p class="card-text">					
+							an.andreou@cablenetcy.net
+							<br>
+							ts@cablenetcy.net
+							<br>
+							c.aristidou@cablenetcy.net
+							<br><br>
+							Static IP Request
+							<br><br>
+							Customer below has requested a retail static IP for remote access to their server
+							<br><br>
+							Product added on SLA.
+							<br><br>
+							Number: 
+							<br>
+							Account:
+							<br> 
+							Contact: 
+							<br><br>
+							Please proceed accordingly and let me know.
+							<br>
+						</p>
+					</div>
+				</div>
+
+				<!--  -->
+					
+				<div id="testing" class="card">
+					<div class="card-header">High Utilization Email</div>
+					<div class="card-body">
+						<p class="card-text">					
+							High utilization on S1-16 card 8/ at 21:30
+							<br><br>
+							an.andreou@cablenetcy.net
+							<br>
+							ts@cablenetcy.net
+							<br>
+							engineers@cablenetcy.net
+							<br><br>
+							Dear Engineers,
+							<br><br>
+							High utilization on L1-27 card 8/ at 20:05
+							<br><br>
+							SLA:20004378
+							<br><br>
+							cmts1.lar> show interface utilization | include 15/
+							<br>
+							15/0         1      55.62   40.04    72%             -      -
+							<br>
+							15/1         1      55.62   40.04    72%             -      -
+							<br>
+							15/2         1      55.62   40.04    72%             -      -
+						</p>
+					</div>
+				</div>
+				<div id="testing" class="card">
+					<div class="card-header">Video Issue Ticket</div>
+					<div class="card-body">
+						<p class="card-text">					
+							Dear Video,
+							<br><br>
+							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
+							following message:
+							<br>
+							"<strong>Error Message</strong>".
+							<br><br>
+							We tried reproducing the error but everything was working on our side.
+							<br><br>
+							We proceeded with:
+							<br><br>
+							1) Factory reset (Modem & Decoder) 
+							<br>
+							2) Replaced the ethernet cable & Modem ethernet port
+							<br>
+							3) Made sure the decoder's directly connected on the modem
+							<br>
+							4) Conax (Pair & Sync) and Vod (Sync & Channel Sync)
+							<br><br>
+							Please investigate and inform me on how to proceed.
+						</p>
+					</div>
+				</div>
+
+				<!--  -->
+
+				<div id="testing" class="card">
+					<div class="card-header">Static IP Request</div>
+					<div class="card-body">
+						<p class="card-text">					
+							an.andreou@cablenetcy.net
+							<br>
+							ts@cablenetcy.net
+							<br>
+							c.aristidou@cablenetcy.net
+							<br><br>
+							Static IP Request
+							<br><br>
+							Customer below has requested a retail static IP for remote access to their server
+							<br><br>
+							Product added on SLA.
+							<br><br>
+							Number: 
+							<br>
+							Account:
+							<br> 
+							Contact: 
+							<br><br>
+							Please proceed accordingly and let me know.
+							<br>
+						</p>
+					</div>
+				</div>
+			</div>
 			<!--  -->
-			<p type="text" class="form-control" id="myInput2" readonly>
-				<span class="form-control" id="basic-addon1">Static IP Request</span><br>
-				<span class="form-control" id="basic-addon1">CC: an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net</span><br>
-				
-				Ticket Title: [<strong>Static IP Request</strong>] <br><br>
-				
-				Customer below has requested a retail static IP for remote access to their server <br><br>
-				
-				Product added on SLA. <br><br>
-				
-				<strong>Number</strong>: <br>
-				<strong>Account</strong>: <br>
-				<strong>Contact</strong>: <br><br>
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			<script>
+				function myFunction() {
+				/* Get the text field */
+				var copyText = document.getElementById("myInput");
 
-				Please proceed accordingly and let me know. <br><br>
-				Best regards
-			</p>
-			<!--  -->
-			<p type="text" class="form-control" id="myInput2" readonly>
-				<span class="form-control" id="basic-addon1">High Utilization</span><br>
-				<span class="form-control" id="basic-addon1">CC: an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net</span><br>
-				Ticket Title: [<strong>High Utilization </strong>] <br><br>
-				High utilization on [<strong>Node</strong>] [<strong>Card</strong>] at [<strong>Time</strong>] <br><br>
+				/* Select the text field */
+				copyText.select();
 
-				Dear Engineers,<br><br>
-				High utilization on [<strong>Node</strong>] [<strong>Card</strong>] at [<strong>Time</strong>] <br>
-
-				[SLA: <strong>SLA</strong>]	<br><br>
-				[<Strong>CMTS Command & Results</Strong>] <br><br>
-				cmts1.lar> show interface utilization | include 15/ <br>
-				15/0         1      55.62   40.04    72%             -      - <br>
-				15/1         1      55.62   40.04    72%             -      - <br>
-				...
-			</p>
-		</div>
-		<!--  -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script>
-			function myFunction() {
-  			/* Get the text field */
-  			var copyText = document.getElementById("myInput");
-
-  			/* Select the text field */
-  			copyText.select();
-
-  			/* Copy the text inside the text field */
-  			document.execCommand("copy");
-			}
-		</script>
-	</body>
-</html>
+				/* Copy the text inside the text field */
+				document.execCommand("copy");
+				}
+			</script>
+		</body>
+	</html>

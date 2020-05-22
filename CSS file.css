@@ -39,17 +39,33 @@
     max-width: max-content;
 }
 #myInput3{
+    height: auto;
+    width: auto;
+}
+#MainTitle_Templates{
+    text-align: center;
+    align-self: center;
+    max-width: 100%;
+    min-width: 15%;
+}
+#MainContainer_Templates{
+    padding-right: 5px;
+    padding-left: 5px;
+    max-width: 100%;
+}
+#MainContainer_Templates2{
+    padding-right: 15px;
+    padding-left: 30px;
+    max-width: 100%;
+}
+#testing{
     display: inline-block;
     vertical-align: top;
-    height: 500px;
-    max-width: max-content;
-}
-#basic-addon1{
-    align-self: center;
-    max-width: 100%
-}
-#ContainMe{
-    margin-right: 5px;
-    margin-left: 1px;
-    max-width: 100%;
+    overflow-wrap: break-word;
+    width: max-content;
+    max-width: 365px;
+    height: 600px;
+    max-height: 600px;
+    margin-bottom: 10px;
+    
 }
