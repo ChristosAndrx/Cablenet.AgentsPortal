@@ -73,6 +73,40 @@
 }
 #CardBodyTesting{
     width: 400px;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border-style: none;
+}
+#FixedCardBody{
+    border: solid;
+    border-width: 1px;
+    border-color: #cce5ff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#Templates_CC_Formatting{
+    width: 270px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -0.5px;
+}
+#Templates_CC_Formatting_StaticIP{
+    width: 270px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -0.5px;
+}
+#Templates_CC_Formatting_Utilization{
+    width: 270px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -0.5px;
+}
+#CopyButton{
     display: inline-block;
     vertical-align: top;
 }

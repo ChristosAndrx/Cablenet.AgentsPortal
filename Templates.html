@@ -34,55 +34,89 @@
 						<span class="form-control" id="MainTitle_Templates">CC</span>
 					</div>
 					<input type="text" class="form-control alert-primary" id="myInput"  value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
-					<button onclick="myFunction()">Copy text</button>
+					<button onclick="myFunction()">Copy CC</button>
 				</div>
 			</div>
 
-			<!--  -->
+			<div class="accordion" id="accordionExample">
 
-			<!--  -->
-
-			<div id="MainContainer_Templates2" class="container">
-
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Fault Fault</div>
-					<div class="card-body">
-						<p class="card-text">
-							[<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
-							Issue:
-							<br><br>	
-							<strong>USSNR</strong>
-							<br>
-							<strong>USPwr</strong>
-							<br>
-							<strong>DSPwr</strong>
-							<br>
-							<strong>DSSNR</strong>    
-							<br><br>
-							Modem /Decoder:
-							<br><br>
-							Name: 
-							<br>
-							Number: 
-							<br><br>
-							The customer approved any potential charges.
-						</p>
+				<div id="CardBodyTesting" class="card">
+					<div class="card-header alert-primary" id="headingOne">
+					  <h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						  Fault Ticket
+						</button>
+					  </h2>
 					</div>
-				</div>	
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+					  <div class="card-body" id="FixedCardBody">
+						Title: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
+						Issue:
+						<br><br>	
+						<strong>USSNR</strong>
+						<br>
+						<strong>USPwr</strong>
+						<br>
+						<strong>DSPwr</strong>
+						<br>
+						<strong>DSSNR</strong>    
+						<br><br>
+						Modem /Decoder:
+						<br><br>
+						Name: 
+						<br>
+						Number: 
+						<br><br>
+						The customer approved any potential charges.
+					  </div>
+					</div>
+				</div>
 
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Static IP Request</div>
-					<div class="card-body">
-						<p class="card-text">					
-							an.andreou@cablenetcy.net
-							<br>
-							ts@cablenetcy.net
-							<br>
-							c.aristidou@cablenetcy.net
+				<div id="CardBodyTesting" class="card">
+					<div class="card-header alert-primary" id="headingTwo">
+					  <h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							High Utilization Email
+						</button>
+					  </h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					  <div class="card-body" id="FixedCardBody">
+						<input id="Templates_CC_Formatting_Utilization" readonly type="text" class="form-control alert-primary" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net"> 
+						<button id="CopyButton" onclick="Utilization_CC_Copying()">Copy text</button>
+						<br><br>
+						<strong>Title:</strong> High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
+						<br><br>
+						Dear Engineers,
+						<br><br>
+						High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
+						<br><br>
+						SLA: [<strong>SLA</strong>]
+						<br><br>
+						<strong>CMTS Command</strong>
+						<br>
+						15/0 1 55.62 40.04 72% - -
+						<br>
+						15/1 1 55.62 40.04 72% - -
+						<br>
+						15/2 1 55.62 40.04 72% - -
+					  </div>
+					</div>
+				  </div>
+	
+				<div id="CardBodyTesting" class="card">
+					<div class="card-header alert-primary" id="headingThree">
+						<h2 class="mb-0">
+							<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								  Static IP Request Email
+							</button>
+						  </h2>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body" id="FixedCardBody">
+							<input id="Templates_CC_Formatting_StaticIP" readonly type="text" class="form-control alert-primary" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net"> 
+							<button id="CopyButton" onclick="static_IP_Copying()">Copy text</button>
+							<!--  -->
 							<br><br>
 							Static IP Request
 							<br><br>
@@ -97,58 +131,26 @@
 							Contact: 
 							<br><br>
 							Please proceed accordingly and let me know.
-							<br>
-						</p>
-					</div>
-				</div>
-
-				<!--  -->
-					
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">High Utilization Email</div>
-					<div class="card-body">
-						<p class="card-text">
-							an.andreou@cablenetcy.net
-							<br>
-							ts@cablenetcy.net
-							<br>
-							engineers@cablenetcy.net
-							<br><br>
-							High utilization on S1-16 card 8/ at 21:30
-							<br><br>
-							Dear Engineers,
-							<br><br>
-							High utilization on L1-27 card 8/ at 20:05
-							<br><br>
-							SLA:20004378
-							<br><br>
-							cmts1.lar> show interface utilization | include 15/
-							<br>
-							15/0         1      55.62   40.04    72%             -      -
-							<br>
-							15/1         1      55.62   40.04    72%             -      -
-							<br>
-							15/2         1      55.62   40.04    72%             -      -
-						</p>
+						</div>
 					</div>
 				</div>
 				
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Video Issue Ticket</div>
-					<div class="card-body">
-						<p class="card-text">					
+				<div id="CardBodyTesting" class="card">
+					<div class="card-header alert-primary" id="headingFour">
+					  <h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						  Video Issue Ticket
+						</button>
+					  </h2>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					  	<div class="card-body" id="FixedCardBody">
 							Dear Video,
 							<br><br>
 							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
-							following message:
-							<br>
-							"<strong>Error Message</strong>".
+							following message: "<strong>Error Message</strong>".
 							<br><br>
-							We tried reproducing the error but everything was working on our side.
-							<br><br>
-							We proceeded with:
+							We tried reproducing the error but everything was working on our side. We proceeded with:
 							<br><br>
 							1) Factory reset (Modem & Decoder) 
 							<br>
@@ -156,145 +158,29 @@
 							<br>
 							3) Made sure the decoder's directly connected on the modem
 							<br>
-							4) Conax (Pair & Sync) and Vod (Sync & Channel Sync)
+							4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
 							<br><br>
 							Please investigate and inform me on how to proceed.
-						</p>
+						</div>
 					</div>
 				</div>
 
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Static IP Request</div>
-					<div class="card-body">
-						<p class="card-text">					
-							an.andreou@cablenetcy.net
-							<br>
-							ts@cablenetcy.net
-							<br>
-							c.aristidou@cablenetcy.net
-							<br><br>
-							Static IP Request
-							<br><br>
-							Customer below has requested a retail static IP for remote access to their server
-							<br><br>
-							Product added on SLA.
-							<br><br>
-							Number: 
-							<br>
-							Account:
-							<br> 
-							Contact: 
-							<br><br>
-							Please proceed accordingly and let me know.
-							<br>
-						</p>
+				<div id="CardBodyTesting" class="card">
+					<div class="card-header alert-primary" id="headingFour">
+					  <h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						  Video Issue Ticket (PlaceHolder)
+						</button>
+					  </h2>
 					</div>
-				</div>
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Fault Fault</div>
-					<div class="card-body">
-						<p class="card-text">
-							Issue:
-							<br><br>	
-							USSNR
-							<br>
-							USPwr
-							<br>
-							DSPwr
-							<br>
-							DSSNR    
-							<br><br>
-							Modem /Decoder:
-							<br><br>
-							Name: 
-							<br>
-							Number: 
-							<br><br>
-							The customer approved any potential charges.
-						</p>
-					</div>
-				</div>	
-
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Static IP Request</div>
-					<div class="card-body">
-						<p class="card-text">					
-							an.andreou@cablenetcy.net
-							<br>
-							ts@cablenetcy.net
-							<br>
-							c.aristidou@cablenetcy.net
-							<br><br>
-							Static IP Request
-							<br><br>
-							Customer below has requested a retail static IP for remote access to their server
-							<br><br>
-							Product added on SLA.
-							<br><br>
-							Number: 
-							<br>
-							Account:
-							<br> 
-							Contact: 
-							<br><br>
-							Please proceed accordingly and let me know.
-							<br>
-						</p>
-					</div>
-				</div>
-
-				<!--  -->
-					
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">High Utilization Email</div>
-					<div class="card-body">
-						<p class="card-text">					
-							High utilization on S1-16 card 8/ at 21:30
-							<br><br>
-							an.andreou@cablenetcy.net
-							<br>
-							ts@cablenetcy.net
-							<br>
-							engineers@cablenetcy.net
-							<br><br>
-							Dear Engineers,
-							<br><br>
-							High utilization on L1-27 card 8/ at 20:05
-							<br><br>
-							SLA:20004378
-							<br><br>
-							cmts1.lar> show interface utilization | include 15/
-							<br>
-							15/0         1      55.62   40.04    72%             -      -
-							<br>
-							15/1         1      55.62   40.04    72%             -      -
-							<br>
-							15/2         1      55.62   40.04    72%             -      -
-						</p>
-					</div>
-				</div>
-
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Video Issue Ticket</div>
-					<div class="card-body">
-						<p class="card-text">					
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					  	<div class="card-body" id="FixedCardBody">
 							Dear Video,
 							<br><br>
 							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
-							following message:
-							<br>
-							"<strong>Error Message</strong>".
+							following message: "<strong>Error Message</strong>".
 							<br><br>
-							We tried reproducing the error but everything was working on our side.
-							<br><br>
-							We proceeded with:
+							We tried reproducing the error but everything was working on our side. We proceeded with:
 							<br><br>
 							1) Factory reset (Modem & Decoder) 
 							<br>
@@ -302,44 +188,12 @@
 							<br>
 							3) Made sure the decoder's directly connected on the modem
 							<br>
-							4) Conax (Pair & Sync) and Vod (Sync & Channel Sync)
+							4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
 							<br><br>
 							Please investigate and inform me on how to proceed.
-						</p>
+						</div>
 					</div>
 				</div>
-
-				<!--  -->
-
-				<div id="testing" class="card">
-					<div class="card-header alert-primary">Static IP Request</div>
-					<div class="card-body">
-						<p class="card-text">					
-							an.andreou@cablenetcy.net
-							<br>
-							ts@cablenetcy.net
-							<br>
-							c.aristidou@cablenetcy.net
-							<br><br>
-							Static IP Request
-							<br><br>
-							Customer below has requested a retail static IP for remote access to their server
-							<br><br>
-							Product added on SLA.
-							<br><br>
-							Number: 
-							<br>
-							Account:
-							<br> 
-							Contact: 
-							<br><br>
-							Please proceed accordingly and let me know.
-							<br>
-						</p>
-					</div>
-				</div>
-
-				<!--  -->
 
 			</div>
 
@@ -347,6 +201,7 @@
 			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 			<script>
 				function myFunction() {
 				/* Get the text field */
@@ -359,6 +214,33 @@
 				document.execCommand("copy");
 				}
 			</script>
+	
+			<script>
+				function static_IP_Copying() {
+				/* Get the text field */
+				var copyText = document.getElementById("Templates_CC_Formatting_StaticIP");
+
+				/* Select the text field */
+				copyText.select();
+
+				/* Copy the text inside the text field */
+				document.execCommand("copy");
+				}
+			</script>
+
+			<script>
+				function Utilization_CC_Copying() {
+				/* Get the text field */
+				var copyText = document.getElementById("Templates_CC_Formatting_Utilization");
+
+				/* Select the text field */
+				copyText.select();
+
+				/* Copy the text inside the text field */
+				document.execCommand("copy");
+				}
+			</script>
+
 			<script>
 				var coll = document.getElementsByClassName("collapsible");
 				var i;
@@ -374,6 +256,6 @@
 					}
 				  });
 				}
-				</script>
+			</script>
 		</body>
 	</html>
