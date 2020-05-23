@@ -6,10 +6,9 @@
 			<link rel="stylesheet" href="CSS file.css">
 		</head>
 		<body>
-			<nav class="navbar navbar-default navbar-expand-xl navbar-light bg-light">		
-				<a class="navbar-brand">
-					<img class="CablenetLogo" src="Resources/Other/CablenetLogo.png">
-				</a>
+
+			<nav class="navbar navbar-default navbar-expand-xl navbar-light bg-light">      
+				<a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -26,8 +25,6 @@
 				</div>
 			</nav>
 
-			<!--  -->
-
 			<div id="MainContainer_Templates" class="container">
 				<div class="input-group mb-3">
 					<div class="input-group-prepend">
@@ -40,7 +37,7 @@
 
 			<div class="accordion" id="accordionExample">
 
-				<div id="CardBodyTesting" class="card">
+				<div id="CardBody_Templates" class="card">
 					<div class="card-header alert-primary" id="headingOne">
 					  <h2 class="mb-0">
 						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -50,16 +47,16 @@
 					</div>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 					  <div class="card-body" id="FixedCardBody">
-						Title: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
+						<strong>Title</strong>: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
 						Issue:
 						<br><br>	
-						<strong>USSNR</strong>
+						<strong>USSNR</strong>:
 						<br>
-						<strong>USPwr</strong>
+						<strong>USPwr</strong>:
 						<br>
-						<strong>DSPwr</strong>
+						<strong>DSPwr</strong>:
 						<br>
-						<strong>DSSNR</strong>    
+						<strong>DSSNR</strong>:  
 						<br><br>
 						Modem /Decoder:
 						<br><br>
@@ -72,7 +69,7 @@
 					</div>
 				</div>
 
-				<div id="CardBodyTesting" class="card">
+				<div id="CardBody_Templates" class="card">
 					<div class="card-header alert-primary" id="headingTwo">
 					  <h2 class="mb-0">
 						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -91,7 +88,7 @@
 						<br><br>
 						High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
 						<br><br>
-						SLA: [<strong>SLA</strong>]
+						<strong>SLA</strong>:
 						<br><br>
 						<strong>CMTS Command</strong>
 						<br>
@@ -104,13 +101,13 @@
 					</div>
 				  </div>
 	
-				<div id="CardBodyTesting" class="card">
+				<div id="CardBody_Templates" class="card">
 					<div class="card-header alert-primary" id="headingThree">
 						<h2 class="mb-0">
 							<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								  Static IP Request Email
 							</button>
-						  </h2>
+						</h2>
 					</div>
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 						<div class="card-body" id="FixedCardBody">
@@ -118,7 +115,7 @@
 							<button id="CopyButton" onclick="static_IP_Copying()">Copy text</button>
 							<!--  -->
 							<br><br>
-							Static IP Request
+							<strong>Title</strong>: Static IP Request
 							<br><br>
 							Customer below has requested a retail static IP for remote access to their server
 							<br><br>
@@ -135,7 +132,7 @@
 					</div>
 				</div>
 				
-				<div id="CardBodyTesting" class="card">
+				<div id="CardBody_Templates" class="card">
 					<div class="card-header alert-primary" id="headingFour">
 					  <h2 class="mb-0">
 						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -145,6 +142,7 @@
 					</div>
 					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 					  	<div class="card-body" id="FixedCardBody">
+							<strong>Title</strong>: Issue with [<strong>Channel</strong>]
 							Dear Video,
 							<br><br>
 							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
@@ -152,7 +150,7 @@
 							<br><br>
 							We tried reproducing the error but everything was working on our side. We proceeded with:
 							<br><br>
-							1) Factory reset (Modem & Decoder) 
+							1) Factory Reset (Modem & Decoder) 
 							<br>
 							2) Replaced the ethernet cable & Modem ethernet port
 							<br>
@@ -165,32 +163,29 @@
 					</div>
 				</div>
 
-				<div id="CardBodyTesting" class="card">
-					<div class="card-header alert-primary" id="headingFour">
+				<div id="CardBody_Templates" class="card">
+					<div class="card-header alert-primary" id="headingFive">
 					  <h2 class="mb-0">
-						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-						  Video Issue Ticket (PlaceHolder)
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						  Coax Cable Request
 						</button>
 					  </h2>
 					</div>
-					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
 					  	<div class="card-body" id="FixedCardBody">
-							Dear Video,
+							<strong>Title</strong>: Coax Cable Request [<strong>SLA</strong>]
 							<br><br>
-							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
-							following message: "<strong>Error Message</strong>".
+							The customer requested a new coax cable [<strong>Amount of meters</strong>] for their TV / Modem.
 							<br><br>
-							We tried reproducing the error but everything was working on our side. We proceeded with:
+							The customer approved the charge of (Amount/Meter) for their cable.
 							<br><br>
-							1) Factory reset (Modem & Decoder) 
+							Customer Name:
 							<br>
-							2) Replaced the ethernet cable & Modem ethernet port
+							Customer SLA:
 							<br>
-							3) Made sure the decoder's directly connected on the modem
+							Customer Phone:
 							<br>
-							4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
-							<br><br>
-							Please investigate and inform me on how to proceed.
+							Store:
 						</div>
 					</div>
 				</div>
@@ -204,39 +199,24 @@
 
 			<script>
 				function myFunction() {
-				/* Get the text field */
 				var copyText = document.getElementById("myInput");
-
-				/* Select the text field */
 				copyText.select();
-
-				/* Copy the text inside the text field */
 				document.execCommand("copy");
 				}
 			</script>
 	
 			<script>
-				function static_IP_Copying() {
-				/* Get the text field */
+				function static_IP_Copying(){
 				var copyText = document.getElementById("Templates_CC_Formatting_StaticIP");
-
-				/* Select the text field */
 				copyText.select();
-
-				/* Copy the text inside the text field */
 				document.execCommand("copy");
 				}
 			</script>
 
 			<script>
-				function Utilization_CC_Copying() {
-				/* Get the text field */
+				function Utilization_CC_Copying(){
 				var copyText = document.getElementById("Templates_CC_Formatting_Utilization");
-
-				/* Select the text field */
 				copyText.select();
-
-				/* Copy the text inside the text field */
 				document.execCommand("copy");
 				}
 			</script>
@@ -246,12 +226,14 @@
 				var i;
 				
 				for (i = 0; i < coll.length; i++) {
-				  coll[i].addEventListener("click", function() {
+				  coll[i].addEventListener("click", function(){
 					this.classList.toggle("active");
 					var content = this.nextElementSibling;
-					if (content.style.display === "block") {
+
+					if (content.style.display === "block"){
 					  content.style.display = "none";
-					} else {
+					} 
+					else{
 					  content.style.display = "block";
 					}
 				  });

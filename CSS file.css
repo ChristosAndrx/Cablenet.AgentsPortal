@@ -1,3 +1,8 @@
+.iFrameNavBar{
+    border: none;
+    height: 100%;
+    width: 100%;
+}
 .navbar{
     background-color:  #5F2C88!important;
 }
@@ -26,17 +31,11 @@
 #NormalButton2{
     width: 190px;
 }
-.popover{
-    max-width: max-content;
-}
 .alert{
     margin-bottom: 0px;
 }
 #myInput2{
-    display: inline-block;
-    vertical-align: top;
     height: 500px;
-    max-width: max-content;
 }
 #myInput3{
     height: auto;
@@ -58,24 +57,12 @@
     padding-left: 30px;
     max-width: 100%;
 }
-#testing{
-    display: inline-block;
-    vertical-align: top;
-    overflow-wrap: break-word;
-    width: max-content;
-    max-width: 365px;
-    height: 600px;
-    max-height: auto;
-    margin-bottom: 10px;
-}
 .alert{
     width: 100%;
 }
-#CardBodyTesting{
+#CardBody_Templates{
     width: 400px;
     margin-top: 10px;
-    display: inline-block;
-    vertical-align: top;
     border-style: none;
 }
 #FixedCardBody{
@@ -88,25 +75,31 @@
 #Templates_CC_Formatting{
     width: 270px;
     height: 30px;
-    display: inline-block;
-    vertical-align: top;
     margin-left: -0.5px;
 }
 #Templates_CC_Formatting_StaticIP{
     width: 270px;
     height: 30px;
-    display: inline-block;
-    vertical-align: top;
     margin-left: -0.5px;
 }
 #Templates_CC_Formatting_Utilization{
     width: 270px;
     height: 30px;
-    display: inline-block;
-    vertical-align: top;
     margin-left: -0.5px;
 }
-#CopyButton{
+
+#CopyButton,
+#Templates_CC_Formatting_Utilization,
+#Templates_CC_Formatting_StaticIP,
+#Templates_CC_Formatting,
+#CardBody_Templates,
+#myInput2{
     display: inline-block;
     vertical-align: top;
 }
+
+.popover,
+#myInput2{
+    max-width: max-content;
+}
+
