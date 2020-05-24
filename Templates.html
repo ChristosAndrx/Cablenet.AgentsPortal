@@ -1,85 +1,70 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>Templates</title>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-			<link rel="stylesheet" href="CSS file.css">
-		</head>
-		<body>
+<html>
+<head>
+	<title>Templates</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS file.css">
+	<div id="NavigationBarReference"></div>
+</head>
+<body>
+	<!--  -->
 
-			<nav class="navbar navbar-default navbar-expand-xl navbar-light bg-light">      
-				<a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!--  -->
-				<div class="collapse navbar-collapse"id="navbarNav">
-					<ul class="navbar-nav nav-fill w-100">
-						<li class="nav-item"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="Modems.html">Modems</a></li>
-						<li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>
-						<li class="nav-item"><a class="nav-link" href="SmartPhones.html">SmartPhones</a></li>
-						<li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>
-						<li class="nav-item"><a class="nav-link" href="Business.html">Business</a></li>      
-					</ul>
-				</div>
-			</nav>
+	<!--  -->
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="form-control" id="MainTitle_Templates">CC</span>
+		</div>
+		<input type="text" class="form-control alert-primary" id="myInput"  value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
+		<button onclick="myFunction()">Copy CC</button>
+	</div>
+	<!--  -->
 
-			<div id="MainContainer_Templates" class="container">
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-						<span class="form-control" id="MainTitle_Templates">CC</span>
-					</div>
-					<input type="text" class="form-control alert-primary" id="myInput"  value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
-					<button onclick="myFunction()">Copy CC</button>
+	<div class="accordion" id="accordionExample">
+	<!--  -->
+		<div id="CardBody_Templates" class="card">
+			<div class="card-header alert-primary" id="headingOne">
+				<h2 class="mb-0">
+					<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				  		Fault Ticket
+					</button>
+			  	</h2>
+			</div>
+			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				<div class="card-body" id="FixedCardBody">
+					<strong>Title</strong>: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
+					Issue:
+					<br><br>	
+					<strong>USSNR</strong>:
+					<br>
+					<strong>USPwr</strong>:
+					<br>
+					<strong>DSPwr</strong>:
+					<br>
+					<strong>DSSNR</strong>:  
+					<br><br>
+					Modem /Decoder:
+					<br><br>
+					Name: 
+					<br>
+					Number: 
+					<br><br>
+					The customer approved any potential charges.
 				</div>
 			</div>
+		</div>
+		<!--  -->
 
-			<div class="accordion" id="accordionExample">
-
-				<div id="CardBody_Templates" class="card">
-					<div class="card-header alert-primary" id="headingOne">
-					  <h2 class="mb-0">
-						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-						  Fault Ticket
-						</button>
-					  </h2>
-					</div>
-					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-					  <div class="card-body" id="FixedCardBody">
-						<strong>Title</strong>: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
-						Issue:
-						<br><br>	
-						<strong>USSNR</strong>:
-						<br>
-						<strong>USPwr</strong>:
-						<br>
-						<strong>DSPwr</strong>:
-						<br>
-						<strong>DSSNR</strong>:  
-						<br><br>
-						Modem /Decoder:
-						<br><br>
-						Name: 
-						<br>
-						Number: 
-						<br><br>
-						The customer approved any potential charges.
-					  </div>
-					</div>
-				</div>
-
-				<div id="CardBody_Templates" class="card">
-					<div class="card-header alert-primary" id="headingTwo">
-					  <h2 class="mb-0">
-						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							High Utilization Email
-						</button>
-					  </h2>
-					</div>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-					  <div class="card-body" id="FixedCardBody">
-						<input id="Templates_CC_Formatting_Utilization" readonly type="text" class="form-control alert-primary" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net"> 
+		<div id="CardBody_Templates" class="card">
+			<div class="card-header alert-primary" id="headingTwo">
+				<h2 class="mb-0">
+					<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						High Utilization Email
+					</button>
+				</h2>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div class="card-body" id="FixedCardBody">
+					<input id="Templates_CC_Formatting_Utilization" readonly type="text" class="form-control alert-primary" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net"> 
 						<button id="CopyButton" onclick="Utilization_CC_Copying()">Copy text</button>
 						<br><br>
 						<strong>Title:</strong> High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
@@ -97,147 +82,148 @@
 						15/1 1 55.62 40.04 72% - -
 						<br>
 						15/2 1 55.62 40.04 72% - -
-					  </div>
-					</div>
-				  </div>
-	
-				<div id="CardBody_Templates" class="card">
-					<div class="card-header alert-primary" id="headingThree">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								  Static IP Request Email
-							</button>
-						</h2>
-					</div>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						<div class="card-body" id="FixedCardBody">
-							<input id="Templates_CC_Formatting_StaticIP" readonly type="text" class="form-control alert-primary" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net"> 
-							<button id="CopyButton" onclick="static_IP_Copying()">Copy text</button>
-							<!--  -->
-							<br><br>
-							<strong>Title</strong>: Static IP Request
-							<br><br>
-							Customer below has requested a retail static IP for remote access to their server
-							<br><br>
-							Product added on SLA.
-							<br><br>
-							Number: 
-							<br>
-							Account:
-							<br> 
-							Contact: 
-							<br><br>
-							Please proceed accordingly and let me know.
-						</div>
-					</div>
+				  	</div>
 				</div>
-				
-				<div id="CardBody_Templates" class="card">
-					<div class="card-header alert-primary" id="headingFour">
-					  <h2 class="mb-0">
-						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-						  Video Issue Ticket
-						</button>
-					  </h2>
-					</div>
-					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-					  	<div class="card-body" id="FixedCardBody">
-							<strong>Title</strong>: Issue with [<strong>Channel</strong>]
-							Dear Video,
-							<br><br>
-							The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
-							following message: "<strong>Error Message</strong>".
-							<br><br>
-							We tried reproducing the error but everything was working on our side. We proceeded with:
-							<br><br>
-							1) Factory Reset (Modem & Decoder) 
-							<br>
-							2) Replaced the ethernet cable & Modem ethernet port
-							<br>
-							3) Made sure the decoder's directly connected on the modem
-							<br>
-							4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
-							<br><br>
-							Please investigate and inform me on how to proceed.
-						</div>
-					</div>
-				</div>
-
-				<div id="CardBody_Templates" class="card">
-					<div class="card-header alert-primary" id="headingFive">
-					  <h2 class="mb-0">
-						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-						  Coax Cable Request
-						</button>
-					  </h2>
-					</div>
-					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-					  	<div class="card-body" id="FixedCardBody">
-							<strong>Title</strong>: Coax Cable Request [<strong>SLA</strong>]
-							<br><br>
-							The customer requested a new coax cable [<strong>Amount of meters</strong>] for their TV / Modem.
-							<br><br>
-							The customer approved the charge of (Amount/Meter) for their cable.
-							<br><br>
-							Customer Name:
-							<br>
-							Customer SLA:
-							<br>
-							Customer Phone:
-							<br>
-							Store:
-						</div>
-					</div>
-				</div>
-
 			</div>
-
 			<!--  -->
-			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-			<script>
-				function myFunction() {
-				var copyText = document.getElementById("myInput");
-				copyText.select();
-				document.execCommand("copy");
-				}
-			</script>
-	
-			<script>
-				function static_IP_Copying(){
-				var copyText = document.getElementById("Templates_CC_Formatting_StaticIP");
-				copyText.select();
-				document.execCommand("copy");
-				}
-			</script>
-
-			<script>
-				function Utilization_CC_Copying(){
-				var copyText = document.getElementById("Templates_CC_Formatting_Utilization");
-				copyText.select();
-				document.execCommand("copy");
-				}
-			</script>
-
-			<script>
-				var coll = document.getElementsByClassName("collapsible");
-				var i;
+			<div id="CardBody_Templates" class="card">
+				<div class="card-header alert-primary" id="headingThree">
+					<h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							  Static IP Request Email
+						</button>
+					</h2>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="card-body" id="FixedCardBody">
+						<input id="Templates_CC_Formatting_StaticIP" readonly type="text" class="form-control alert-primary" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net"> 
+						<button id="CopyButton" onclick="static_IP_Copying()">Copy text</button>
+						<br><br>
+						<strong>Title</strong>: Static IP Request
+						<br><br>
+						Customer below has requested a retail static IP for remote access to their server
+						<br><br>
+						Product added on SLA.
+						<br><br>
+						Number: 
+						<br>
+						Account:
+						<br> 
+						Contact: 
+						<br><br>
+						Please proceed accordingly and let me know.
+					</div>
+				</div>
+			</div>
+			<!--  -->
 				
-				for (i = 0; i < coll.length; i++) {
-				  coll[i].addEventListener("click", function(){
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
+			<div id="CardBody_Templates" class="card">
+				<div class="card-header alert-primary" id="headingFour">
+					<h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					  		Video Issue Ticket
+						</button>
+				  	</h2>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+				  	<div class="card-body" id="FixedCardBody">
+						<strong>Title</strong>: Issue with [<strong>Channel</strong>]
+						Dear Video,
+						<br><br>
+						The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
+						following message: "<strong>Error Message</strong>".
+						<br><br>
+						We tried reproducing the error but everything was working on our side. We proceeded with:
+						<br><br>
+						1) Factory Reset (Modem & Decoder) 
+						<br>
+						2) Replaced the ethernet cable & Modem ethernet port
+						<br>
+						3) Made sure the decoder's directly connected on the modem
+						<br>
+						4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
+						<br><br>
+						Please investigate and inform me on how to proceed.
+					</div>
+				</div>
+			</div>
+			<!--  -->
 
+			<div id="CardBody_Templates" class="card">
+				<div class="card-header alert-primary" id="headingFive">
+					<h2 class="mb-0">
+						<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					  		Coax Cable Request
+						</button>
+				  	</h2>
+				</div>
+				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+				  	<div class="card-body" id="FixedCardBody">
+						<strong>Title</strong>: Coax Cable Request [<strong>SLA</strong>]
+						<br><br>
+						The customer requested a new coax cable [<strong>Amount of meters</strong>] for their TV / Modem.
+						<br><br>
+						The customer approved the charge of (Amount/Meter) for their cable.
+						<br><br>
+						Customer Name:
+						<br>
+						Customer SLA:
+						<br>
+						Customer Phone:
+						<br>
+						Store:
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+		<script src="NavBar.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		<script>
+			function myFunction() {
+			var copyText = document.getElementById("myInput");
+			copyText.select();
+			document.execCommand("copy");
+			}
+		</script>
+	
+		<script>
+			function static_IP_Copying(){
+			var copyText = document.getElementById("Templates_CC_Formatting_StaticIP");
+			copyText.select();
+			document.execCommand("copy");
+			}
+		</script>
+
+		<script>
+			function Utilization_CC_Copying(){
+			var copyText = document.getElementById("Templates_CC_Formatting_Utilization");
+			copyText.select();
+			document.execCommand("copy");
+			}
+		</script>
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
 					if (content.style.display === "block"){
-					  content.style.display = "none";
-					} 
-					else{
+				  content.style.display = "none";
+				} 
+				else{
 					  content.style.display = "block";
 					}
-				  });
-				}
-			</script>
-		</body>
-	</html>
+				});
+			}
+		</script>
+</body>
+</html>
