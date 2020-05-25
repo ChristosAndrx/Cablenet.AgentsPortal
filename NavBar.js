@@ -1,3 +1,4 @@
+// The navigation bar code! All changes performed here will automatically carry over to every single page of the website
 var html = 
 '<nav  id="navigation-placeholder" class="navbar navbar-default navbar-expand-xl navbar-light bg-light">\
     <a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>\
@@ -19,12 +20,12 @@ var html =
 \
 <!-- -->\
 <div class="alert alert-success alert-dismissible fade show" role="alert">\
-	Help fix Agents Portal by sending your findings to <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
+	Help improve Agents Portal by sending your findings: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 </div>\
 \
 \
-<div class="alert alert-danger" role="alert">Node P8-1 DOWN</div>\
+<div class="alert alert-danger" role="alert">Node P8-2 DOWN</div>\
 \
 \
 ';
@@ -32,7 +33,6 @@ var html =
 document.getElementById('NavigationBarReference').innerHTML = html;
 
 // Simple Notification for the nodes being down. The user's unable to disable these:
-
 // <div class="alert alert-danger" role="alert">Node P8-1 DOWN</div>\                         
 
 // Simple Notication for any other updates. The user's able to close these.
