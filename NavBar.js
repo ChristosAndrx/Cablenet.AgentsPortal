@@ -25,9 +25,6 @@ var html =
 </div>\
 \
 \
-<div class="alert alert-danger" role="alert">Node P8-2 DOWN</div>\
-\
-\
 ';
 
 document.getElementById('NavigationBarReference').innerHTML = html;

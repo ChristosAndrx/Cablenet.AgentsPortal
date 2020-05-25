@@ -55,11 +55,6 @@
 .alert{
     width: 100%;
 }
-#CardBody_Templates{
-    width: 380px;
-    margin-top: 10px;
-    border-style: none;
-}
 #FixedCardBody{
     border: solid;
     border-width: 1px;
@@ -82,17 +77,15 @@
     height: 30px;
     margin-left: -0.5px;
 }
-
 #CopyButton,
 #Templates_CC_Formatting_Utilization,
 #Templates_CC_Formatting_StaticIP,
 #Templates_CC_Formatting,
-#CardBody_Templates,
+#pdfReader,
 #myInput2{
     display: inline-block;
     vertical-align: top;
 }
-
 .popover,
 #myInput2{
     max-width: max-content;
