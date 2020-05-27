@@ -8,240 +8,287 @@
 </head>
 <body>
 	<!--  -->
-	<div class="accordion" id="Accordion">
+	<div class="row">
+		<div class="col-4">
+		  	<div class="list-group" id="list-tab" role="tablist">
+				<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+				<a class="list-group-item list-group-item-action" id="list-Entry1-list" data-toggle="list" href="#list-Entry1" role="tab" aria-controls="Entry1">
+					Mobile Network
+				</a>
 
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingOne">
-				<h2 class="mb-0">
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						Mobile Network
-					</button>
-				</h2>
-			</div>
-			<!--  -->
-			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#Accordion">
-				<div class="card-body">
-					<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="
-					1) Find the application 'SIM Toolkit' on your device <br />
-					2) Select Multi IMSI <br />
-					3) Select Manual Switch <br />
-					4) Select Roaming <br />
-					5) Restart your device <br />
-					<br />
-					<strong /> Note: </strong /> If it still doesn't connect to a Mobile Network, go to: <br />
-					1) Mobile Settings <br />
-					2) Mobile Network <br />
-					3) Network Operators <br />
-					4) Select manually an operator" data-html="true">
-						Android Devices
-					</button>
+				<a class="list-group-item list-group-item-action" id="list-Entry2-list" data-toggle="list" href="#list-Entry2" role="tab" aria-controls="Entry2">
+					Telephony Features
+				</a>
+				
+				<a class="list-group-item list-group-item-action" id="list-Entry3-list" data-toggle="list" href="#list-Entry3" role="tab" aria-controls="Entry3">
+					Mobile Data Settings (APN)
+				</a>
+				  
+				<a class="list-group-item list-group-item-action" id="list-Entry4-list" data-toggle="list" href="#list-Entry4" role="tab" aria-controls="Entry4">
+					Modem Keys (Default Password)
+				</a>
+				  
+				 <a class="list-group-item list-group-item-action" id="list-Entry5-list" data-toggle="list" href="#list-Entry5" role="tab" aria-controls="Entry5">
+					Collaborator Numbers
+				</a>
+				
+				<a class="list-group-item list-group-item-action" id="list-Entry6-list" data-toggle="list" href="#list-Entry6" role="tab" aria-controls="Entry6">
+					Optimal Subscription Levels
+				</a>
+				
+				<a class="list-group-item list-group-item-action" id="list-Entry7-list" data-toggle="list" href="#list-Entry7" role="tab" aria-controls="Entry7">
+					Landline Missing in Onix
+				</a>
+				<!-- 
+				<a class="list-group-item list-group-item-action" id="list-Entry8-list" data-toggle="list" href="#list-Entry8" role="tab" aria-controls="Entry8">
+					Entry1
+				</a>
+				  
+				<a class="list-group-item list-group-item-action" id="list-Entry9-list" data-toggle="list" href="#list-Entry9" role="tab" aria-controls="Entry9">
+					Entry1
+				</a>
+				 
+				<a class="list-group-item list-group-item-action" id="list-Entry10-list" data-toggle="list" href="#list-Entry10" role="tab" aria-controls="Entry10">
+					Entry1
+				</a>
+				  
+				<a class="list-group-item list-group-item-action" id="list-Entry11-list" data-toggle="list" href="#list-Entry11" role="tab" aria-controls="Entry11">
+					Entry1
+				</a>
+				 
+				<a class="list-group-item list-group-item-action" id="list-Entry12-list" data-toggle="list" href="#list-Entry12" role="tab" aria-controls="Entry12">
+					Entry1
+				</a>
+				  
+			  	<a class="list-group-item list-group-item-action" id="list-Entry13-list" data-toggle="list" href="#list-Entry13" role="tab" aria-controls="Entry13">
+					Entry1
+				</a> -->
+			  	<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+		  	</div>
+		</div>
 
-					<br><br>
-					
-					<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="
-					1) Find the application 'SIM Toolkit' on your device <br /> 
-					2) Select Multi IMSI <br />
-					3) Select Manual Switch <br /> 
-					4) Select Roaming <br /> 
-					5) Restart your device<br /> 
-					<br />
-					<strong /> Note: </strong /> If it still doesn't connect to a Mobile Network, go to: <br />
-					1) Mobile Settings <br />
-					2) Mobile Network <br />
-					3) Network Operators <br />
-					4) Select manually an operator" data-html="true">
-						Apple Device
-					</button>
+		<div class="col-8">
+		  	<div class="tab-content" id="nav-tabContent">
+			<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			  	<div class="tab-pane fade" id="list-Entry1" role="tabpanel" aria-labelledby="list-Entry1-list">
+				<div class="row">
+					<div class="col-4">
+					  <div class="list-group" id="list-tab" role="tablist">
+						<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+						<a class="list-group-item list-group-item-action" id="list-Android-list" data-toggle="list" href="#list-Android" role="tab" aria-controls="Android">
+							Android
+						</a>
+
+						<a class="list-group-item list-group-item-action" id="list-Apple-list" data-toggle="list" href="#list-Apple" role="tab" aria-controls="Apple">
+							Apple
+						</a>						
+						<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+					  </div>
+					</div>
+					<div class="col-8">
+					  <div class="tab-content" id="nav-tabContent">
+						<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+						<div class="tab-pane fade" id="list-Android" role="tabpane1" aria-labelledby="list-Android-list">
+							<div class="card-body" id="FixedCardBody">
+								1) Find the application 'SIM Toolkit' on your device 
+								<br>
+								2) Select Multi IMSI 
+								<br>
+								3) Select Manual Switch 
+								<br>
+								4) Select Roaming 
+								<br>
+								5) Restart your device
+								<br><br>
+								<strong>Note</strong>: If it still doesn't connect to a Mobile Network, go to: 
+								<br><br>
+								1) Mobile Settings 
+								<br>
+								2) Mobile Network 
+								<br>
+								3) Network Operators 
+								<br>
+								4) Manually select an operator
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="list-Apple" role="tabpane1" aria-labelledby="list-Apple-list">
+							<div class="card-body" id="FixedCardBody">
+								1) Find the application 'SIM Toolkit' on your device 
+								<br> 
+								2) Select Multi IMSI 
+								<br>
+								3) Select Manual Switch 
+								<br> 
+								4) Select Roaming 
+								<br> 
+								5) Restart your device
+								<br><br>
+								<strong> Note: </strong> If it still doesn't connect to a Mobile Network, go to: 
+								<br><br>
+								1) Mobile Settings 
+								<br>
+								2) Mobile Network 
+								<br>
+								3) Network Operators 
+								<br>
+								4) Select manually an operator
+							</div>
+						</div>
+						<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+					  </div>
+					</div>
+				  </div>
+			  	</div>
+
+				<div class="tab-pane fade" id="list-Entry2" role="tabpane1" aria-labelledby="list-Entry2-list">
+
+					<div class="row">
+						<div class="col-4">
+							<div class="list-group" id="list-tab" role="tablist">
+							<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+								<a class="list-group-item list-group-item-action" id="list-FreeTelephonyFeatures-list" data-toggle="list" href="#list-FreeTelephonyFeatures" role="tab" aria-controls="FreeTelephonyFeatures">
+									FreeTelephonyFeatures
+								</a>
+								
+								<a class="list-group-item list-group-item-action" id="list-PaidTelephonyFeatures-list" data-toggle="list" href="#list-PaidTelephonyFeatures" role="tab" aria-controls="PaidTelephonyFeatures">
+									PaidTelephonyFeatures
+								</a>
+							<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+							</div>
+						</div>
+						<div class="col-8">
+						  <div class="tab-content" id="nav-tabContent">
+							<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+								<div class="tab-pane fade" id="list-FreeTelephonyFeatures" role="tabpanel" aria-labelledby="list-FreeTelephonyFeatures-list">
+									<div class="card-body" id="FixedCardBody">
+										<p><h5><strong>Free Telephony Features</strong></h5></p>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*21[<strong />Telephone number</strong />]#	#21#" data-html="true">CF "Unconditional"</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*22[<strong />Telephone number</strong />]#	#22#" data-html="true">CF on "Busy"</button> 
+										<br><br>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*24[<strong />Telephone number</strong />]#	#24#" data-html="true">CF on "No Answer"</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="#101#" data-html="true">Mobile Remaining</button>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="list-PaidTelephonyFeatures" role="tabpanel" aria-labelledby="list-PaidTelephonyFeatures-list">
+									<div class="card-body" id="FixedCardBody">
+										<p><h5><strong>Additional Telephony Features</strong></h5></p>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*26#" data-html="true">Do Not Disturb</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*43#	#43#" data-html="true">Call Waiting</button>
+										<br><br>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="on Call Waiting" data-html="true">Caller ID Delivery</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*44#	#44#" data-html="true">Three way Calling</button>
+										<br><br>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Call 22252525 & Follow instructions" data-html="true">Remote call forwarding</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*55 [hh:mm]	#55#" data-html="true">Wake Up Call</button>
+										<br><br>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*28#	#28#" data-html="true">No Anonymous Calls</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Call 130" data-html="true">No Premium Numbers</button>
+										<br><br>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Must Call 130" data-html="true">No International Calls</button>
+										<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="CLIR – *31* [<strong>Telephone number</strong>]" data-html="true">Clear all the features</button>
+									</div>
+								</div>
+							<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->	  
+						  </div>
+						</div>
+					  </div>					  
 				</div>
-			</div>
-		</div>
-		<!--  -->
-
-		<div class="card">
-			<div class="card-header" id="headingTwo">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						Telephony Features
-					</button>
-				</h2>
-			</div>
-			<!--  -->
-			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#Accordion">
-				<div class="card-body">  					
-					<p><h5><strong>Free Telephony Features</strong></h5></p>
-					<!--  -->
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*21[<strong />Telephone number</strong />]#	#21#" data-html="true">CF "Unconditional"</button>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*22[<strong />Telephone number</strong />]#	#22#" data-html="true">CF on "Busy"</button> 
-					<br><br>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*24[<strong />Telephone number</strong />]#	#24#" data-html="true">CF on "No Answer"</button>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="#101#" data-html="true">Mobile Remaining</button>
-					<!--  -->
-					<br><br>
-					<!--  -->
-					<p><h5><strong>Additional Telephony Features</strong></h5></p>
-					<!--  -->
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*26#" data-html="true">Do Not Disturb</button>
-
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*43#	#43#" data-html="true">Call Waiting</button>
-
-					<br><br>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="on Call Waiting" data-html="true">Caller ID Delivery</button>
-
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*44#	#44#" data-html="true">Three way Calling</button>
-
-					<br><br>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Call 22252525 & Follow instructions" data-html="true">Remote call forwarding</button>
-
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*55 [hh:mm]	#55#" data-html="true">Wake Up Call</button>
-
-					<br><br>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*28#	#28#" data-html="true">No Anonymous Calls</button>
-
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Call 130" data-html="true">No Premium Numbers</button>
-
-					<br><br>
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Must Call 130" data-html="true">No International Calls</button>
-
-					<button id="NormalButton2" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="CLIR – *31* [<strong>Telephone number</strong>]" data-html="true">Clear all the features</button>
+						  					 
+				<div class="tab-pane fade" id="list-Entry3" role="tabpanel" aria-labelledby="list-Entry3-list">
+					<div class="card-body" id="FixedCardBody">
+						<p><strong>Page: </strong> <a href="https://www.helpforsmartphone.com/public/en/devices/">helpforsmartphone.com</a></p>
+						<p><strong>Note:</strong> Mobile Data will not be initially working without the proper APN settings configured on the device.</p>
+						Name: <strong>cablenet</strong> (Lowercase letters)
+						<br>
+						APN: <strong>cablenet</strong> (Lowercase letters)
+						<br><br>
+						The rest of the settings are aquired automatically.
+					</div>
 				</div>
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingThree">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						Mobile Data Settings (APN)
-					</button>
-				</h2>
-			</div>
-			<!--  -->
-			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#Accordion">
-				<div class="card-body">
-					<p><strong>Page: </strong> <a href="https://www.helpforsmartphone.com/public/en/devices/">helpforsmartphone.com</a></p>
-					<p><strong>Note:</strong> Mobile Data will not be initially working without the proper APN settings configured on the device.</p>
-					Name: <strong>cablenet</strong> (Lowercase letters)
-					<br>
-					APN: <strong> cablenet</strong> (Lowercase letters)
-					<br><br>
-					The rest of the settings are aquired automatically.
+
+				<div class="tab-pane fade" id="list-Entry4" role="tabpanel" aria-labelledby="list-Entry4-list">
+					<div class="card-body" id="FixedCardBody">
+						<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Wireless Passphrase">Hitron</button>
+						<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Wep Key">Thomson</button>
+						<br><br>
+						<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="PSK">Arris 2492</button>
+						<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Secure Key">Arris WTM</button>
+					</div>
 				</div>
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingFour">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-						Modem Keys (Default Password)
-					</button>
-				</h2>
-			</div>
-			<!--  -->
-			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#Accordion">
-				<div class="card-body">
-					<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Wireless Passphrase">Hitron</button>
-					<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Wep Key">Thomson</button>
-					<br><br>
-					<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="PSK">Arris 2492</button>
-					<button id="NormalButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Secure Key">Arris WTM</button>
+
+				<div class="tab-pane fade" id="list-Entry5" role="tabpanel" aria-labelledby="list-Entry5-list">
+						<div class="row">
+							<div class="col-4">
+							  <div class="list-group" id="list-tab" role="tablist">
+								  <a class="list-group-item list-group-item-action" id="list-Nicosia-list" data-toggle="list" href="#list-Nicosia" role="tab" aria-controls="Nicosia">Nicosia</a>
+								  <a class="list-group-item list-group-item-action" id="list-Limassol-list" data-toggle="list" href="#list-Limassol" role="tab" aria-controls="Limassol">Limassol</a>
+								  <a class="list-group-item list-group-item-action" id="list-Larnaca-list" data-toggle="list" href="#list-Larnaca" role="tab" aria-controls="Larnaca">Larnaca</a>
+							  </div>
+							</div>
+							<div class="col-8">
+							  <div class="tab-content" id="nav-tabContent">
+								  <div class="tab-pane fade" id="list-Nicosia" role="tabpanel" aria-labelledby="list-Nicosia-list">
+									<div class="card-body" id="FixedCardBody">
+										Names & Numbers here
+									</div>
+								  </div>
+								  <div class="tab-pane fade" id="list-Limassol" role="tabpanel" aria-labelledby="list-Limassol-list">
+									<div class="card-body" id="FixedCardBody">
+										Names & Numbers here
+									</div>
+								  </div>
+								  <div class="tab-pane fade" id="list-Larnaca" role="tabpanel" aria-labelledby="list-Larnaca-list">
+									<div class="card-body" id="FixedCardBody">
+										Names & Numbers here
+									</div>
+								  </div>
+							  </div>
+						  </div>						  
+					</div>
 				</div>
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingFive">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-						Collapsible Group Item #5
-					</button>
-				</h2>
-			</div>
-			<!--  -->
-			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#Accordion">
-				<div class="card-body">
-					Example
+				 
+				<div class="tab-pane fade" id="list-Entry6" role="tabpanel" aria-labelledby="list-Entry6-list">
+					<div class="card-body" id="FixedCardBody">
+						<strong>USSNR:</strong> [33 - 47] (Noise)
+						<br>
+						<strong>USPwr:</strong> [38 - 51] (Disconnections)
+						<br>
+						<strong>DSPwr:</strong> [-4 - 12] (TV)
+						<br>
+						<strong>DSSNR:</strong> [35 - 45] (Speed & TV)
+					</div>
 				</div>
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingSix">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-						Collapsible Group Item #6
-					</button>
-				</h2>
-			</div>
-			<!--  -->
-			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#Accordion">
-				<div class="card-body">
-					Example
+				
+				<div class="tab-pane fade" id="list-Entry7" role="tabpanel" aria-labelledby="list-Entry-list">
+					<div class="card-body" id="FixedCardBody">
+						Phone enabled but not in onix:
+						<br>
+						Check telephony in products
+						<br>
+						Actions -> Refresh Meta
+						<br>
+						Onix Sync
+					</div>
 				</div>
+				<!---
+				<div class="tab-pane fade" id="list-Entry8" role="tabpanel" aria-labelledby="list-Entry8-list">...</div>
+
+				<div class="tab-pane fade" id="list-Entry9" role="tabpanel" aria-labelledby="list-Entry9-list">...</div>
+
+				<div class="tab-pane fade" id="list-Entry10" role="tabpanel" aria-labelledby="list-Entry10-list">...</div>
+
+				<div class="tab-pane fade" id="list-Entry11" role="tabpanel" aria-labelledby="list-Entry11-list">...</div>
+
+				<div class="tab-pane fade" id="list-Entry12" role="tabpanel" aria-labelledby="list-Entry12-list">...</div>
+
+				<div class="tab-pane fade" id="list-Entry13" role="tabpanel" aria-labelledby="list-Entry13-list">...</div> -->
+			<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			</div>
+		  </div>
 		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingSeven">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-						Collapsible Group Item #7
-					</button>
-				</h2>
-			</div>
-			<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#Accordion">
-				<div class="card-body">
-					Example
-				</div>
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingEight">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-						Collapsible Group Item #8
-					</button>
-				</h2>
-			</div>
-			<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#Accordion">
-				<div class="card-body">
-					Example
-				</div>
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingNine">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-						Collapsible Group Item #9
-				</button>
-			</h2>
-		</div>
-		<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#Accordion">
-			<div class="card-body">
-				Example
-			</div>
-		</div>
-		<!--  -->
-		<div class="card">
-			<div class="card-header" id="headingTen">
-				<h2 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-						Collapsible Group Item #10
-					</button>
-				</h2>
-			</div>
-			<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#Accordion">
-				<div class="card-body">
-					Example
-				</div>
-			</div>
-		</div>
-		<!--  -->
-	</div>
+	  </div>		
 	<!--  -->
 	<script src="NavBar.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

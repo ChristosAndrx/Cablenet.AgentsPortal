@@ -90,4 +90,6 @@
 #myInput2{
     max-width: max-content;
 }
-
+.toast-header{
+    background-color: #cce5ff;
+}

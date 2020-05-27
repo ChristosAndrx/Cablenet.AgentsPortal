@@ -16,15 +16,11 @@ var html =
             </ul>\
         </div>\
 </nav>\
-\
-\
 <!-- -->\
 <div class="alert alert-success alert-dismissible fade show" role="alert">\
-	Help improve Agents Portal by sending your findings: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
+	Help improve Agents Portal by sending your findings & suggestions: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 </div>\
-\
-\
 ';
 
 document.getElementById('NavigationBarReference').innerHTML = html;
