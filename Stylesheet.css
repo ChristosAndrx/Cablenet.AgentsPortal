@@ -1,3 +1,6 @@
+body{
+    min-width:980px;
+}
 .CablenetLogo{
     width: 250px;
 }
@@ -27,4 +30,17 @@
 }
 .list-group-item{
     min-width: fit-content;
+}
+
+#AndroidLogo,
+#AppleLogo{
+    max-width: 85%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    min-width: 280px;
+    min-height: 100px;
+}
+#PlumeLogo{
+    height: 100%;
 }
