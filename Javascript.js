@@ -1,7 +1,8 @@
-// The navigation bar code! All changes performed here will automatically carry over to every single page of the website
-var html = 
-'<nav  id="navigation-placeholder" class="navbar navbar-default navbar-expand-xl navbar-light bg-light">\
-    <a class="navbar-brand"><img class="CablenetLogo" src="Resources/Other/CablenetLogo.png"></a>\
+html = '\
+<nav id="NavigationBar" class="navbar navbar-default navbar-expand-xl navbar-light bg-light">\
+    <a class="navbar-brand">\
+        <img class="CablenetLogo" src="CablenetLogo.png">\
+    </a>\
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">\
             <span class="navbar-toggler-icon"></span>\
         </button>\
@@ -10,7 +11,7 @@ var html =
                 <li class="nav-item"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a></li>\
                 <li class="nav-item"><a class="nav-link" href="Modems.html">Modems</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>\
-                <li class="nav-item"><a class="nav-link" href="SmartPhones.html">SmartPhones</a></li>\
+                <li class="nav-item"><a class="nav-link" href="Smartphones.html">Smartphones</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Business.html">Business</a></li>\
             </ul>\
@@ -22,8 +23,7 @@ var html =
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 </div>\
 ';
-
-document.getElementById('NavigationBarReference').innerHTML = html;
+document.getElementById("NavigationBarReference").innerHTML = html;
 
 // Simple Notification for the nodes being down. The user's unable to disable these:
 // <div class="alert alert-danger" role="alert">Node P8-1 DOWN</div>\                         

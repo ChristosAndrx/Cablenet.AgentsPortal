@@ -1,0 +1,30 @@
+.CablenetLogo{
+    width: 250px;
+}
+#NavigationBar{
+    background-color:  #5F2C88!important;
+}
+.nav-link{
+    font-size: 30px;
+    font-weight: 450;
+}
+.alert{ 
+    margin-bottom: 0px!important;
+}
+#GroupList_Content{   
+    max-width: 100%;
+    width: 100% ; 
+    border: solid;
+    border-width: 1px;
+    border-color: #cce5ff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 100%!important;
+    padding: 15px;
+}
+#Retail_TelephonyButton{
+    width: 190px;
+}
+.list-group-item{
+    min-width: fit-content;
+}
