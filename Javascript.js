@@ -1,7 +1,7 @@
 html = '\
 <nav id="NavigationBar" class="navbar navbar-default navbar-expand-xl navbar-light bg-light">\
     <a class="navbar-brand">\
-        <img class="CablenetLogo" src="CablenetLogo.png">\
+        <img class="/Resources/CablenetLogo" src="CablenetLogo.png">\
     </a>\
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">\
             <span class="navbar-toggler-icon"></span>\
@@ -12,7 +12,7 @@ html = '\
                 <li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>\
                 <li class="nav-item"><a class="nav-link disabled" aria-disabled href="Business.html">Business</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>\
-                <li class="nav-item"><a class="nav-link" href="AgentTools.html">AgentTools</a></li>\
+                <li class="nav-item"><a class="nav-link" href="AgentTools.html">Agent Tools</a></li>\
             </ul>\
         </div>\
 </nav>\
