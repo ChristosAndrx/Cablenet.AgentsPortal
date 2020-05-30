@@ -9,11 +9,10 @@ html = '\
         <div class="collapse navbar-collapse"id="navbarNav">\
             <ul class="navbar-nav nav-fill w-100">\
                 <li class="nav-item"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a></li>\
-                <li class="nav-item"><a class="nav-link" href="Modems.html">Modems</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>\
-                <li class="nav-item"><a class="nav-link" href="Smartphones.html">Smartphones</a></li>\
+                <li class="nav-item"><a class="nav-link disabled" aria-disabled href="Business.html">Business</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>\
-                <li class="nav-item"><a class="nav-link" href="Business.html">Business</a></li>\
+                <li class="nav-item"><a class="nav-link" href="AgentTools.html">AgentTools</a></li>\
             </ul>\
         </div>\
 </nav>\

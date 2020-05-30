@@ -12,317 +12,133 @@
     <div class="row">
         <div class="col-4">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action" id="MobileNetwork" data-toggle="list" href="#list-Entry1" role="tab" aria-controls="Entry1">Mobile network</a>
-				<a class="list-group-item list-group-item-action" id="TelephonyFeatures" data-toggle="list" href="#list-Entry2" role="tab" aria-controls="Entry2">Telephony features</a>
-				<a class="list-group-item list-group-item-action" id="APNSettings" data-toggle="list" href="#list-Entry3" role="tab" aria-controls="Entry3">Mobile data settings (APN)</a>
-				<a class="list-group-item list-group-item-action" id="ModemKeys" data-toggle="list" href="#list-Entry4" role="tab" aria-controls="Entry4">Modem keys (Default password)</a>
-				<a class="list-group-item list-group-item-action" id="Collaborators" data-toggle="list" href="#list-Entry5" role="tab" aria-controls="Entry5">Collaborator numbers</a>
-				<a class="list-group-item list-group-item-action" id="Levels" data-toggle="list" href="#list-Entry6" role="tab" aria-controls="Entry6">Signal Levels range for CBL modem</a>
-				<a class="list-group-item list-group-item-action" id="LandlineMissing" data-toggle="list" href="#list-Entry7" role="tab" aria-controls="Entry7">Landline missing in Onix</a>
-				<a class="list-group-item list-group-item-action" id="EPGIssue" data-toggle="list" href="#list-Entry8" role="tab" aria-controls="Entry8">Catch up (EPG) not working</a>
-                <a class="list-group-item list-group-item-action" id="PlumeSetup" data-toggle="list" href="#list-Entry9" role="tab" aria-controls="Entry9">Plume Setup</a>
-                <!--
-                    <a class="list-group-item list-group-item-action" id="list-Entry10-list" data-toggle="list" href="#list-Entry10" role="tab" aria-controls="Entry10">Entry1</a>
-                    <a class="list-group-item list-group-item-action" id="list-Entry11-list" data-toggle="list" href="#list-Entry11" role="tab" aria-controls="Entry11">Entry1</a>
-                    <a class="list-group-item list-group-item-action" id="list-Entry12-list" data-toggle="list" href="#list-Entry12" role="tab" aria-controls="Entry12">Entry1</a>		  
-                    <a class="list-group-item list-group-item-action" id="list-Entry13-list" data-toggle="list" href="#list-Entry13" role="tab" aria-controls="Entry13">Entry1</a>
-                 -->
+                <a class="list-group-item list-group-item-action" id="Modems-list" data-toggle="list" href="#Modems" role="tab" aria-controls="Modems">Modems</a>
+                <a class="list-group-item list-group-item-action" id="Decoders-list" data-toggle="list" href="#Decoders" role="tab" aria-controls="Decoders">Decoders</a>
+                <a class="list-group-item list-group-item-action" id="Telephony-list" data-toggle="list" href="#Telephony" role="tab" aria-controls="Telephony">Telephony</a>
+                <a class="list-group-item list-group-item-action" id="Other-list" data-toggle="list" href="#Other" role="tab" aria-controls="Other">Other</a>
+                <!-- 
+                    <a class="list-group-item list-group-item-action" id="PlaceHolder-list" data-toggle="list" href="#PlaceHolder" role="tab" aria-controls="PlaceHolder">PlaceHolder</a> 
+                -->
             </div>
         </div>
         <div class="col-8">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade" id="list-Entry1" role="tabpanel" aria-labelledby="MobileNetwork">
+                <div class="tab-pane fade" id="Modems" role="tabpanel" aria-labelledby="Modems-list">
                     <div class="row">
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action" id="MobileNetworkAndroid" data-toggle="list" href="#list-Android" role="tab" aria-controls="Android">Android</a>
-        
-                                <a class="list-group-item list-group-item-action" id="MobileNetworkApple" data-toggle="list" href="#list-Apple" role="tab" aria-controls="Apple">Apple</a>
+                                <a class="list-group-item list-group-item-action" id="Modem-Issue1-list" data-toggle="list" href="#Modem-Issue1" role="tab" aria-controls="Modem-Issue1">Modem-Issue1</a> 
+                                <a class="list-group-item list-group-item-action" id="Modem-Issue2-list" data-toggle="list" href="#Modem-Issue2" role="tab" aria-controls="Modem-Issue2">Modem-Issue2</a> 
+                                <a class="list-group-item list-group-item-action" id="Modem-Issue3-list" data-toggle="list" href="#Modem-Issue3" role="tab" aria-controls="Modem-Issue3">Modem-Issue3</a> 
+                                <a class="list-group-item list-group-item-action" id="Modem-Issue4-list" data-toggle="list" href="#Modem-Issue4" role="tab" aria-controls="Modem-Issue4">Modem-Issue4</a> 
+                                <a class="list-group-item list-group-item-action" id="Modem-Issue5-list" data-toggle="list" href="#Modem-Issue5" role="tab" aria-controls="Modem-Issue5">Modem-Issue5</a> 
+                                <a class="list-group-item list-group-item-action" id="Modem-Issue6-list" data-toggle="list" href="#Modem-Issue6" role="tab" aria-controls="Modem-Issue6">Modem-Issue6</a> 
                             </div>
                         </div>
                         <div class="col-8">
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade" id="list-Android" role="tabpane1" aria-labelledby="MobileNetworkAndroid">
-                                    <div id="GroupList_Content" class="container">
-                                        <img id="AndroidLogo" src="AndroidLogo.png">
-                                        <br><br>
-                                        1) Find the application 'SIM Toolkit' on your device 
-                                        <br>
-                                        2) Select Multi IMSI 
-                                        <br>
-                                        3) Select Manual Switch 
-                                        <br>
-                                        4) Select Roaming 
-                                        <br>
-                                        5) Restart your device
-                                        <br><br>
-                                        <strong>Note</strong>: If it still doesn't connect to a Mobile Network, go to: 
-                                        <br><br>
-                                        1) Mobile Settings 
-                                        <br>
-                                        2) Mobile Network 
-                                        <br>
-                                        3) Network Operators 
-                                        <br>
-                                        4) Manually select an operator
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="list-Apple" role="tabpane1" aria-labelledby="MobileNetworkApple">
-                                    <div id="GroupList_Content" class="container">
-                                        <img id="AppleLogo" src="AppleLogo.jpg">
-                                        <br><br>
-                                        1) Find the application 'SIM Toolkit' on your device 
-                                        <br> 
-                                        2) Select Multi IMSI 
-                                        <br>
-                                        3) Select Manual Switch 
-                                        <br> 
-                                        4) Select Roaming 
-                                        <br> 
-                                        5) Restart your device
-                                        <br><br>
-                                        <strong> Note: </strong> If it still doesn't connect to a Mobile Network, go to: 
-                                        <br><br>
-                                        1) Mobile Settings 
-                                        <br>
-                                        2) Mobile Network 
-                                        <br>
-                                        3) Network Operators 
-                                        <br>
-                                        4) Select manually an operator
-                                    </div>
-                                </div>
+                                <div class="tab-pane fade" id="Modem-Issue1" role="tabpanel" aria-labelledby="Modem-Issue1-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptate voluptatum adipisci inventore minima libero, aliquam animi rem eveniet natus, maxime ipsa illo quisquam, tenetur reiciendis soluta. Voluptatibus, quam corrupti!</div></div>
+                                <div class="tab-pane fade" id="Modem-Issue2" role="tabpanel" aria-labelledby="Modem-Issue2-list"><div id="GroupList_Content" class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem odio quaerat aspernatur, corporis harum placeat eligendi consequatur qui at numquam soluta nobis facilis quos beatae sed aut maiores labore.</div></div> 
+                                <div class="tab-pane fade" id="Modem-Issue3" role="tabpanel" aria-labelledby="Modem-Issue3-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit aperiam sequi saepe, inventore rerum magni ratione nulla atque excepturi omnis autem aspernatur deserunt fuga libero sed nemo, voluptatem tempora.</div></div> 
+                                <div class="tab-pane fade" id="Modem-Issue4" role="tabpanel" aria-labelledby="Modem-Issue4-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellat velit, itaque iure ducimus ut reprehenderit aliquam vero alias vel eveniet iusto modi blanditiis minus suscipit incidunt eligendi voluptatum provident!m</div></div> 
+                                <div class="tab-pane fade" id="Modem-Issue5" role="tabpanel" aria-labelledby="Modem-Issue5-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure quo placeat blanditiis porro, eveniet ex fugit voluptatum aut laboriosam possimus et, dolorum ipsum? Quam autem aperiam rem magnam molestiae.</div></div> 
+                                <div class="tab-pane fade" id="Modem-Issue6" role="tabpanel" aria-labelledby="Modem-Issue6-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci! Saepe molestias aliquam sapiente modi vel, nam, voluptatum provident pariatur aspernatur doloribus exercitationem eaque. Id debitis ab laudantium tenetur itaque!</div></div> 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-Entry2" role="tabpane1" aria-labelledby="TelephonyFeatures">
+                <div class="tab-pane fade" id="Decoders" role="tabpanel" aria-labelledby="Decoders-list">
                     <div class="row">
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action" id="list-FreeTelephonyFeatures-list" data-toggle="list" href="#list-FreeTelephonyFeatures" role="tab" aria-controls="FreeTelephonyFeatures">Free Telephony Features</a>
-	
-								<a class="list-group-item list-group-item-action" id="list-PaidTelephonyFeatures-list" data-toggle="list" href="#list-PaidTelephonyFeatures" role="tab" aria-controls="PaidTelephonyFeatures">Additional Telephony Features</a>
+                                <a class="list-group-item list-group-item-action" id="Decoder-Issue1-list" data-toggle="list" href="#Decoder-Issue1" role="tab" aria-controls="Decoder-Issue1">Decoder-Issue1</a> 
+                                <a class="list-group-item list-group-item-action" id="Decoder-Issue2-list" data-toggle="list" href="#Decoder-Issue2" role="tab" aria-controls="Decoder-Issue2">Decoder-Issue2</a> 
+                                <a class="list-group-item list-group-item-action" id="Decoder-Issue3-list" data-toggle="list" href="#Decoder-Issue3" role="tab" aria-controls="Decoder-Issue3">Decoder-Issue3</a> 
+                                <a class="list-group-item list-group-item-action" id="Decoder-Issue4-list" data-toggle="list" href="#Decoder-Issue4" role="tab" aria-controls="Decoder-Issue4">Decoder-Issue4</a> 
+                                <a class="list-group-item list-group-item-action" id="Decoder-Issue5-list" data-toggle="list" href="#Decoder-Issue5" role="tab" aria-controls="Decoder-Issue5">Decoder-Issue5</a> 
+                                <a class="list-group-item list-group-item-action" id="Decoder-Issue6-list" data-toggle="list" href="#Decoder-Issue6" role="tab" aria-controls="Decoder-Issue6">Decoder-Issue6</a> 
                             </div>
                         </div>
                         <div class="col-8">
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade" id="list-FreeTelephonyFeatures" role="tabpanel" aria-labelledby="list-FreeTelephonyFeatures-list">
-                                    <div id="GroupList_Content" class="container">
-                                        <button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*21[<strong />Telephone number</strong />]#	#21#" data-html="true">CF "Unconditional"</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*22[<strong />Telephone number</strong />]#	#22#" data-html="true">CF on "Busy"</button> 
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*24[<strong />Telephone number</strong />]#	#24#" data-html="true">CF on "No Answer"</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="#101#" data-html="true">Mobile Remaining</button>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="list-PaidTelephonyFeatures" role="tabpanel" aria-labelledby="list-PaidTelephonyFeatures-list">
-                                    <div id="GroupList_Content" class="container">
-                                        <button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*26#" data-html="true">Do Not Disturb</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*43#	#43#" data-html="true">Call Waiting</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*44#	#44#" data-html="true">Three way Calling</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Call 22252525 & Follow instructions" data-html="true">Remote call forwarding</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*55 [hh:mm]	#55#" data-html="true">Wake Up Call</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="*28#	#28#" data-html="true">No Anonymous Calls</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Call 130" data-html="true">No Premium Numbers</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="Must Call 130" data-html="true">No International Calls</button>
-										<br><br>
-										<button id="Retail_TelephonyButton" tabindex="0" class="btn btn-md btn-primary" role="button" data-toggle="popover" data-trigger="focus" data-content="CLIR – *31* [<strong>Telephone number</strong>]" data-html="true">Clear all the features</button>
-                                    </div>
-                                </div>
+                                <div class="tab-pane fade" id="Decoder-Issue1" role="tabpanel" aria-labelledby="Decoder-Issue1-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptate voluptatum adipisci inventore minima libero, aliquam animi rem eveniet natus, maxime ipsa illo quisquam, tenetur reiciendis soluta. Voluptatibus, quam corrupti!</div></div>
+                                <div class="tab-pane fade" id="Decoder-Issue2" role="tabpanel" aria-labelledby="Decoder-Issue2-list"><div id="GroupList_Content" class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem odio quaerat aspernatur, corporis harum placeat eligendi consequatur qui at numquam soluta nobis facilis quos beatae sed aut maiores labore.</div></div> 
+                                <div class="tab-pane fade" id="Decoder-Issue3" role="tabpanel" aria-labelledby="Decoder-Issue3-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit aperiam sequi saepe, inventore rerum magni ratione nulla atque excepturi omnis autem aspernatur deserunt fuga libero sed nemo, voluptatem tempora.</div></div> 
+                                <div class="tab-pane fade" id="Decoder-Issue4" role="tabpanel" aria-labelledby="Decoder-Issue4-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellat velit, itaque iure ducimus ut reprehenderit aliquam vero alias vel eveniet iusto modi blanditiis minus suscipit incidunt eligendi voluptatum provident!m</div></div> 
+                                <div class="tab-pane fade" id="Decoder-Issue5" role="tabpanel" aria-labelledby="Decoder-Issue5-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure quo placeat blanditiis porro, eveniet ex fugit voluptatum aut laboriosam possimus et, dolorum ipsum? Quam autem aperiam rem magnam molestiae.</div></div> 
+                                <div class="tab-pane fade" id="Decoder-Issue6" role="tabpanel" aria-labelledby="Decoder-Issue6-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci! Saepe molestias aliquam sapiente modi vel, nam, voluptatum provident pariatur aspernatur doloribus exercitationem eaque. Id debitis ab laudantium tenetur itaque!</div></div> 
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="list-Entry3" role="tabpanel" aria-labelledby="APNSettings">
-                    <div id="GroupList_Content" class="container">
-                        <p><strong>Page: </strong> <a href="https://www.helpforsmartphone.com/public/en/devices/">helpforsmartphone.com</a></p>
-						<p><strong>Note:</strong> Mobile Data will not be initially working without the proper APN settings configured on the device.</p>
-						<strong>Name:</strong> cablenet (Lowercase letters)
-						<br>
-						<strong>APN:</strong> cablenet (Lowercase letters)
-						<br><br>
-						The rest of the settings are aquired automatically.
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-Entry4" role="tabpanel" aria-labelledby="ModemKeys">
-                    <div id="GroupList_Content" class="container">
-                        <strong>Hitron:</strong> Wireless Passphrase
-						<br><br>
-						<strong>Thomson:</strong> Wep Key
-						<br><br>
-						<strong>Arris 2492:</strong> PSK
-						<br><br>
-						<strong>Arris WTM:</strong> Secure Key
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-Entry5" role="tabpanel" aria-labelledby="Collaborators">
+                </div>          
+                <div class="tab-pane fade" id="Telephony" role="tabpanel" aria-labelledby="Telephony-list">
                     <div class="row">
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action" id="list-Nicosia-list" data-toggle="list" href="#list-Nicosia" role="tab" aria-controls="Nicosia">Nicosia</a>
-                                <a class="list-group-item list-group-item-action" id="list-Limassol-list" data-toggle="list" href="#list-Limassol" role="tab" aria-controls="Limassol">Limassol</a>
-                                <a class="list-group-item list-group-item-action" id="list-Larnaca-list" data-toggle="list" href="#list-Larnaca" role="tab" aria-controls="Larnaca">Larnaca</a>
+                                <a class="list-group-item list-group-item-action" id="Telephony-Issue1-list" data-toggle="list" href="#Telephony-Issue1" role="tab" aria-controls="Telephony-Issue1">Telephony-Issue1</a> 
+                                <a class="list-group-item list-group-item-action" id="Telephony-Issue2-list" data-toggle="list" href="#Telephony-Issue2" role="tab" aria-controls="Telephony-Issue2">Telephony-Issue2</a> 
+                                <a class="list-group-item list-group-item-action" id="Telephony-Issue3-list" data-toggle="list" href="#Telephony-Issue3" role="tab" aria-controls="Telephony-Issue3">Telephony-Issue3</a> 
+                                <a class="list-group-item list-group-item-action" id="Telephony-Issue4-list" data-toggle="list" href="#Telephony-Issue4" role="tab" aria-controls="Telephony-Issue4">Telephony-Issue4</a> 
+                                <a class="list-group-item list-group-item-action" id="Telephony-Issue5-list" data-toggle="list" href="#Telephony-Issue5" role="tab" aria-controls="Telephony-Issue5">Telephony-Issue5</a> 
+                                <a class="list-group-item list-group-item-action" id="Telephony-Issue6-list" data-toggle="list" href="#Telephony-Issue6" role="tab" aria-controls="Telephony-Issue6">Telephony-Issue6</a> 
                             </div>
                         </div>
                         <div class="col-8">
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade" id="list-Nicosia" role="tabpanel" aria-labelledby="list-Nicosia-list">
-                                    <div id="GroupList_Content" class="container">
-                                        <strong>Name:</strong>
-										<br>
-										<strong>Number: </strong>
-										<br><br>
-										<strong>Name:</strong>
-										<br>
-										<strong>Number: </strong>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="list-Limassol" role="tabpanel" aria-labelledby="list-Limassol-list">
-                                    <div id="GroupList_Content" class="container">
-                                        <strong>Name:</strong>
-										<br>
-										<strong>Number: </strong>
-										<br><br>
-										<strong>Name:</strong>
-										<br>
-										<strong>Number: </strong>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="list-Larnaca" role="tabpanel" aria-labelledby="list-Larnaca-list">
-                                    <div id="GroupList_Content" class="container">
-                                        <strong>Name:</strong>
-										<br>
-										<strong>Number: </strong>
-										<br><br>
-										<strong>Name:</strong>
-										<br>
-										<strong>Number: </strong>
-                                    </div>
-                                </div>
+                                <div class="tab-pane fade" id="Telephony-Issue1" role="tabpanel" aria-labelledby="Telephony-Issue1-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptate voluptatum adipisci inventore minima libero, aliquam animi rem eveniet natus, maxime ipsa illo quisquam, tenetur reiciendis soluta. Voluptatibus, quam corrupti!</div></div>
+                                <div class="tab-pane fade" id="Telephony-Issue2" role="tabpanel" aria-labelledby="Telephony-Issue2-list"><div id="GroupList_Content" class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem odio quaerat aspernatur, corporis harum placeat eligendi consequatur qui at numquam soluta nobis facilis quos beatae sed aut maiores labore.</div></div> 
+                                <div class="tab-pane fade" id="Telephony-Issue3" role="tabpanel" aria-labelledby="Telephony-Issue3-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit aperiam sequi saepe, inventore rerum magni ratione nulla atque excepturi omnis autem aspernatur deserunt fuga libero sed nemo, voluptatem tempora.</div></div> 
+                                <div class="tab-pane fade" id="Telephony-Issue4" role="tabpanel" aria-labelledby="Telephony-Issue4-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellat velit, itaque iure ducimus ut reprehenderit aliquam vero alias vel eveniet iusto modi blanditiis minus suscipit incidunt eligendi voluptatum provident!m</div></div> 
+                                <div class="tab-pane fade" id="Telephony-Issue5" role="tabpanel" aria-labelledby="Telephony-Issue5-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure quo placeat blanditiis porro, eveniet ex fugit voluptatum aut laboriosam possimus et, dolorum ipsum? Quam autem aperiam rem magnam molestiae.</div></div> 
+                                <div class="tab-pane fade" id="Telephony-Issue6" role="tabpanel" aria-labelledby="Telephony-Issue6-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci! Saepe molestias aliquam sapiente modi vel, nam, voluptatum provident pariatur aspernatur doloribus exercitationem eaque. Id debitis ab laudantium tenetur itaque!</div></div> 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-Entry6" role="tabpanel" aria-labelledby="Levels">
-                    <div id="GroupList_Content" class="container">
-                        <strong>USPwR</strong>: 35dBm to 55dBm
-                        <br><br>
-                        <strong>DSPwR</strong>: -15.0 dBm   to  15.0 dBm
-                        <br><br>
-                        <strong>USSNR</strong>: greater than or equal [>=] 34
-                        <br><br>
-                        <strong>DSSNR</strong>: greater than or equal [>=] 35
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-Entry7" role="tabpanel" aria-labelledby="LandlineMissing">
-                    <div id="GroupList_Content" class="container">
-						<strong>1)</strong> Actions
-						<br><br>
-						<strong>2)</strong> Refresh Meta
-						<br><br>
-						<strong>3)</strong> Onix Sync
-					</div>
-                </div>
-                <div class="tab-pane fade" id="list-Entry8" role="tabpanel" aria-labelledby="EPGIssue">
-                    <div id="GroupList_Content" class="container">
-                        <strong>1)</strong> Press <strong>Menu</strong> on the cablenet remote.
-						<br><br>
-						<strong>2)</strong> Check the 4 icons on the <strong>top left</strong> side of the main menu <strong>(All of them must be orange & TRX OK)</strong>
-						<br><br>
-						<strong>2)</strong> Conax (Pair & Sync)
-						<br><br>
-						<strong>3)</strong> VOD (Pair & Sync)
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-Entry9" role="tabpanel" aria-labelledby="PlumeSetup">
-                    <div id="GroupList_Content" class="container">
-                        <img id="PlumeLogo" src="PlumeLogo.png">
-                        <br><br>
-                        <h5><strong>Plume Setup</strong></h5>
-                        In order to configure your Plume Adaptive WiFiTM network, you will need the following:
-                        <ul>
-                            <li><strong>Internet Service</strong></li>
-                            <li><strong>Access to email</strong></li>
-                            <li><strong>Modem</strong></li>
-                            <li><strong>Data or Wi-Fi Connection</strong> on your mobile device to download the Plume App and set up your Plume network.</li>
-                            <li><strong>Mobile Device</strong></li>
-                            <li><strong>BLE</strong> (Bluetooth Low Energy) support, (Bluetooth 4.0 or higher)</li>
-                            <li><strong>Android Requirements:</strong> Phone device running Android 4.4 or later</li>
-                        </ul>
-                        <p>
-                            You will need to download the Plume Android Application to configure your Pods.
-                            <br><br>
-                            The latest version of the Plume Application for Android: <a href="https://play.google.com/store/apps/details?id=com.plumewifi.plume&hl=en">Plume for Android</a>
-                            <br>
-                            The latest version of the Plume Application for iOS: <a href="https://apps.apple.com/us/app/plume-wifi/id1086207508">Plume for iOS</a>
-                        </p>
-                        <br>
-                        <h5><strong>Plume Network Mode</strong></h5>
-                        <ul>
-                            <li><strong>Auto Mode</strong>: The Default configuration. Plume will auto detect the configuration and set itself up accordingly.</li>
-                            <li><strong>Router Mode</strong>: Plume Gateway acts as secure firewall, handles DCHP, DNS, and all other network security.</li>
-                            <li><strong>Bridge Mode</strong>:  Plume Gateway is connected to a wired router or switch. Plume will handle broadcasting your WiFi and leave all other routing functions to your router.</li>
-                        </ul>
-                        <br>
-                        <h5><strong>Setting up your plume</strong></h5>
-                        <ol>
-                            <li><strong>Account setup:</strong> Full Name & Email Address should be registered in the Plume Application</li>
-                            <li><strong>Account password:</strong> Must be at least 6 characters long.</li>
-                            <li><strong>Email verification:</strong> Email Address must be verified.</li>
-                            <li><strong>Restart your modem:</strong> Unplug any devices currently connected on the modem before
-                                restarting.</li>
-                            <li><strong>Connect on modem:</strong> Connect the pod on the modem via ethernet cable & hit <strong>next</strong> in the application.</li>
-                            <li><strong>Connect to power:</strong> Plug the second pod on any power socket. Once the pod is detected by the application and associated to the cloud, the screen will automatically advance.</li>
-                            <li><strong>Set up your new WiFi:</strong> Enter your new SSID & Password <strong>Note:</strong> Not to be confused with the password used earlier.</li>
-                            <li><strong>Pod updates:</strong> Pods will check for firmware updates during setup & periodically over time.</li>
-                            <li><strong>Join your network:</strong> On Android, the application will automatically join the new network.</li>
-                            <li><strong>Naming Pods: Pods can be named for easier identification.
-                                <br>
-                                The phone needs to be in close proximity & the bluetooth needs to be enabled, in order to proceed with changes.</strong> 
-                            </li>
-                        </ol>
-                        <br>
-                        <h5><strong>Network Optimization:</strong></h5>
-                        <p>
-                            The plume network will optimize performance over:
-                            <ul>
-                                <li>The next <strong>15-30 minutes</strong> for the first attempt.</li>
-                                <li>The mext <strong>24 hours</strong> for a more detailed optimization.</li>
-                                <li>The mext <strong>few weeks</strong> for fine tuning.</li>
-                            </ul>
-                        </p>
-                        <p>
-                            ⚠ Speedtest should always take place <strong>directly from the modem with an ethernet cable.</strong>
-                            <br>
-                            ✘ Checking the speed test screen in the plume application is <strong>not recommended.</strong>
-                        </p>
+                <div class="tab-pane fade" id="Other" role="tabpanel" aria-labelledby="Other-list">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="CablenetStores-list" data-toggle="list" href="#CablenetStores" role="tab" aria-controls="CablenetStores">Cablenet Stores</a> 
+                                <a class="list-group-item list-group-item-action" id="Other-Issue2-list" data-toggle="list" href="#Other-Issue2" role="tab" aria-controls="Other-Issue2">Other-Issue2</a> 
+                                <a class="list-group-item list-group-item-action" id="Other-Issue3-list" data-toggle="list" href="#Other-Issue3" role="tab" aria-controls="Other-Issue3">Other-Issue3</a> 
+                                <a class="list-group-item list-group-item-action" id="Other-Issue4-list" data-toggle="list" href="#Other-Issue4" role="tab" aria-controls="Other-Issue4">Other-Issue4</a> 
+                                <a class="list-group-item list-group-item-action" id="Other-Issue5-list" data-toggle="list" href="#Other-Issue5" role="tab" aria-controls="Other-Issue5">Other-Issue5</a> 
+                                <a class="list-group-item list-group-item-action" id="Other-Issue6-list" data-toggle="list" href="#Other-Issue6" role="tab" aria-controls="Other-Issue6">Other-Issue6</a> 
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="CablenetStores" role="tabpanel" aria-labelledby="CablenetStores-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <h5>Cablenet Stores</h5>
+                                        <ul>
+                                            <li>Monday to Friday: <time>08:00</time> - <time>19:00</time></li>
+                                            <li>Saturday: <time>09:00</time> - <time>15:00</time></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Other-Issue2" role="tabpanel" aria-labelledby="Other-Issue2-list"><div id="GroupList_Content" class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem odio quaerat aspernatur, corporis harum placeat eligendi consequatur qui at numquam soluta nobis facilis quos beatae sed aut maiores labore.</div></div> 
+                                <div class="tab-pane fade" id="Other-Issue3" role="tabpanel" aria-labelledby="Other-Issue3-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit aperiam sequi saepe, inventore rerum magni ratione nulla atque excepturi omnis autem aspernatur deserunt fuga libero sed nemo, voluptatem tempora.</div></div> 
+                                <div class="tab-pane fade" id="Other-Issue4" role="tabpanel" aria-labelledby="Other-Issue4-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellat velit, itaque iure ducimus ut reprehenderit aliquam vero alias vel eveniet iusto modi blanditiis minus suscipit incidunt eligendi voluptatum provident!m</div></div> 
+                                <div class="tab-pane fade" id="Other-Issue5" role="tabpanel" aria-labelledby="Other-Issue5-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure quo placeat blanditiis porro, eveniet ex fugit voluptatum aut laboriosam possimus et, dolorum ipsum? Quam autem aperiam rem magnam molestiae.</div></div> 
+                                <div class="tab-pane fade" id="Other-Issue6" role="tabpanel" aria-labelledby="Other-Issue6-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci! Saepe molestias aliquam sapiente modi vel, nam, voluptatum provident pariatur aspernatur doloribus exercitationem eaque. Id debitis ab laudantium tenetur itaque!</div></div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- 
-                    <div class="tab-pane fade" id="list-Entry10" role="tabpanel" aria-labelledby="list-Entry10-list">...</div>
-                    <div class="tab-pane fade" id="list-Entry11" role="tabpanel" aria-labelledby="list-Entry11-list">...</div>
-                    <div class="tab-pane fade" id="list-Entry12" role="tabpanel" aria-labelledby="list-Entry12-list">...</div>
-                    <div class="tab-pane fade" id="list-Entry13" role="tabpanel" aria-labelledby="list-Entry13-list">...</div>
-                 -->
+                    <div class="tab-pane fade" id="PlaceHolder" role="tabpanel" aria-labelledby="PlaceHolder-list">...</div> 
+                -->
             </div>
         </div>
-    </div>   
+    </div>
 	<!-----------------------------------------------------------------------------------------------------------------------------> 
     <script src="Javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <Script>
+    <Script>8
 		$(function (){
   		$('[data-toggle="popover"]').popover()
 		});
