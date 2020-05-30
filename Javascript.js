@@ -1,7 +1,7 @@
 html = '\
 <nav id="NavigationBar" class="navbar navbar-default navbar-expand-xl navbar-light bg-light">\
     <a class="navbar-brand">\
-        <img class="/Resources/CablenetLogo" src="CablenetLogo.png">\
+        <img class="CablenetLogo" src="/Resources/CablenetLogo.png">\
     </a>\
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">\
             <span class="navbar-toggler-icon"></span>\
@@ -16,12 +16,15 @@ html = '\
             </ul>\
         </div>\
 </nav>\
-<!-- -->\
+\
+<div class="alert alert-danger" role="alert">Node P8-1 DOWN</div>\
+\
 <div class="alert alert-success alert-dismissible fade show" role="alert">\
 	Help improve Agents Portal by sending your findings & suggestions: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 </div>\
 ';
+
 document.getElementById("NavigationBarReference").innerHTML = html;
 
 // Simple Notification for the nodes being down. The user's unable to disable these:
