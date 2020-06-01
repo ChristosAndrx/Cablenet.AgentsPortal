@@ -1,16 +1,13 @@
-.CablenetLogo{
-    width: 250px;
-}
-#NavigationBar{
-    background-color:  #5F2C88!important;
-}
+.CablenetLogo{ width: 250px;}
+
+#NavigationBar{ background-color:  #5F2C88!important;}
+
 .nav-link{
     font-size: 30px;
     font-weight: 450;
 }
-.alert{ 
-    margin-bottom: 0px!important;
-}
+.alert{  margin-bottom: 0px!important;}
+
 #GroupList_Content{   
     max-width: 100%;
     border: solid;
@@ -25,18 +22,19 @@
     width: 190px;
     margin-right: 150px;
 }
-.list-group-item{
-    min-width: fit-content;
-}
-div.col-8{
-    padding-right: 0%;
-}
-.row{
-    margin-right: 0%
-}
-.list-group-item{
-    min-width: 100px;
-}
+.list-group-item{ min-width: fit-content;}
+
+div.col-8{ padding-right: 0%;}
+
+.row{ margin-right: 0%}
+
+.list-group-item{ min-width: 100px;}
+
+#TableTitle{ text-align: center;}
+
+#AgentTools_TableFormatting1{width: 250px;}
+
+#AgentTools_TableFormatting2{ width: 350px;}
 @media (max-width: 956px){
     #Retail_TelephonyButton {
         margin-bottom: 10px;
