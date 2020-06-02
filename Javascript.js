@@ -8,7 +8,7 @@ html = '\
         </button>\
         <div class="collapse navbar-collapse"id="navbarNav">\
             <ul class="navbar-nav nav-fill w-100">\
-                <li class="nav-item"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a></li>\
+                <li class="nav-item"><a class="nav-link disabled" aria-disabled href="Index.html">Home <span class="sr-only">(current)</span></a></li>\
                 <li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>\
                 <li class="nav-item"><a class="nav-link disabled" aria-disabled href="Business.html">Business</a></li>\
                 <li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>\
@@ -20,7 +20,7 @@ html = '\
 <div class="alert alert-danger" role="alert">Node P8-1 DOWN</div>\
 \
 <div class="alert alert-success alert-dismissible fade show" role="alert">\
-	Help improve Agents Portal by sending your findings & suggestions: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
+	Help improve Agents Portal by submitting your findings & suggestions: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 </div>\
 ';
