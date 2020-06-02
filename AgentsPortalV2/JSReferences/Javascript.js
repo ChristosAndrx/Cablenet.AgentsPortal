@@ -1,18 +1,18 @@
 html = '\
 <nav id="NavigationBar" class="navbar navbar-default navbar-expand-xl navbar-light bg-light">\
     <a class="navbar-brand">\
-        <img class="CablenetLogo" src="/Resources/CablenetLogo.png">\
+        <img class="CablenetLogo" src="/AgentsPortalV2/Resources/CablenetLogo.png">\
     </a>\
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">\
             <span class="navbar-toggler-icon"></span>\
         </button>\
         <div class="collapse navbar-collapse"id="navbarNav">\
             <ul class="navbar-nav nav-fill w-100">\
-                <li class="nav-item"><a class="nav-link disabled" aria-disabled href="Index.html">Home <span class="sr-only">(current)</span></a></li>\
-                <li class="nav-item"><a class="nav-link" href="Retail.html">Retail</a></li>\
-                <li class="nav-item"><a class="nav-link disabled" aria-disabled href="Business.html">Business</a></li>\
-                <li class="nav-item"><a class="nav-link" href="Templates.html">Templates</a></li>\
-                <li class="nav-item"><a class="nav-link" href="AgentTools.html">Agent Tools</a></li>\
+                <li class="nav-item"><a class="nav-link disabled" aria-disabled href="AgentsPortalV2/HTMLReferences/Index.html">Home <span class="sr-only">(current)</span></a></li>\
+                <li class="nav-item"><a class="nav-link" href="/AgentsPortalV2/HTMLReferences/Retail.html">Retail</a></li>\
+                <li class="nav-item"><a class="nav-link disabled" href="/AgentsPortalV2/HTMLReferences/Business.html">Business</a></li>\
+                <li class="nav-item"><a class="nav-link" href="/AgentsPortalV2/HTMLReferences/Templates.html">Templates</a></li>\
+                <li class="nav-item"><a class="nav-link" href="/AgentsPortalV2/HTMLReferences/AgentTools.html">Agent Tools</a></li>\
             </ul>\
         </div>\
 </nav>\
