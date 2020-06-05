@@ -26,8 +26,8 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action" id="Modem-Issue1-list" data-toggle="list" href="#Modem-Issue1" role="tab" aria-controls="Modem-Issue1">Modem-Issue1</a> 
-                                <a class="list-group-item list-group-item-action" id="Modem-Issue2-list" data-toggle="list" href="#Modem-Issue2" role="tab" aria-controls="Modem-Issue2">Modem-Issue2</a> 
+                                <a class="list-group-item list-group-item-action" id="BridgeMode-list" data-toggle="list" href="#BridgeMode" role="tab" aria-controls="BridgeMode">Bridge Mode Arris (1652 & 2492)</a> 
+                                <a class="list-group-item list-group-item-action" id="PortForwarding-list" data-toggle="list" href="#PortForwarding" role="tab" aria-controls="PortForwarding">Port Forwarding</a> 
                                 <a class="list-group-item list-group-item-action" id="Modem-Issue3-list" data-toggle="list" href="#Modem-Issue3" role="tab" aria-controls="Modem-Issue3">Modem-Issue3</a> 
                                 <a class="list-group-item list-group-item-action" id="Modem-Issue4-list" data-toggle="list" href="#Modem-Issue4" role="tab" aria-controls="Modem-Issue4">Modem-Issue4</a> 
                                 <a class="list-group-item list-group-item-action" id="Modem-Issue5-list" data-toggle="list" href="#Modem-Issue5" role="tab" aria-controls="Modem-Issue5">Modem-Issue5</a> 
@@ -36,8 +36,109 @@
                         </div>
                         <div class="col-8">
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade" id="Modem-Issue1" role="tabpanel" aria-labelledby="Modem-Issue1-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptate voluptatum adipisci inventore minima libero, aliquam animi rem eveniet natus, maxime ipsa illo quisquam, tenetur reiciendis soluta. Voluptatibus, quam corrupti!</div></div>
-                                <div class="tab-pane fade" id="Modem-Issue2" role="tabpanel" aria-labelledby="Modem-Issue2-list"><div id="GroupList_Content" class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem odio quaerat aspernatur, corporis harum placeat eligendi consequatur qui at numquam soluta nobis facilis quos beatae sed aut maiores labore.</div></div> 
+                                <div class="tab-pane fade" id="BridgeMode" role="tabpanel" aria-labelledby="BridgeMode-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <ol>
+                                            <li>Connect your device with ethernet cable to our modem.</li>
+                                            <li>Type <strong>192.168.0.1</strong> in your browser's address bar.</li>
+                                            <li>This will redirect you in the modem's interface.
+                                                <ul>
+                                                    <li>Username: <strong>admin</strong></li>
+                                                    <li>Password: <strong>password</strong></li>
+                                                </ul>                 
+                                            </li>
+                                            <li>Click on Basic Setup</li>
+                                            <li>Disable both Wifi
+                                                <ul>
+                                                    <li>2.4GHz</li>
+                                                    <li>5Ghz</li>
+                                                </ul>
+                                            </li>
+                                            <li>Click on <strong>Apply</strong></li>
+                                            <li>Click on <strong>Wan Setup</strong> and select <strong>Dynamic</strong></li>
+                                            <li>Write down: 
+                                                <ul>
+                                                    <li>IP Address</li>
+                                                    <li>Subnet Mask</li>
+                                                    <li>Gateway Address</li>
+                                                </ul>
+                                            </li>
+                                            <li>Click on <strong>Wan Setup</strong> & select <strong>Static</strong></li>
+                                            <li>Enable <strong>Static IP</strong> (Insert what you have from Dynamic settings)</li>
+                                            <li>Set DNS: 
+                                                <ul>
+                                                    <li>Primary: <strong>213.140.208.226</strong> </li>
+                                                    <li>Secondary: <strong>213.140.209.226</strong> </li>
+                                                </ul>
+                                            </li>
+                                            <li>CLick on <strong>Apply</strong></li>
+                                            <li>Click on <strong>Wan Setup & select Dynamic</strong></li>
+                                            <li>Disable <strong>DHCP</strong></li>
+                                            <li>Click on <strong>Apply</strong></li>
+                                            <li>Click on <strong>Lan Setup</strong></li>
+                                            <li>Disable <strong>DHCP Server</strong></li>
+                                            <li>Change <strong>"RoutedWithNat"</strong> to <strong>"Bridged"</strong></li>
+                                            <li>Wait for the applied changes to take place and restart your modem.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="PortForwarding" role="tabpanel" aria-labelledby="PortForwarding-list">
+                                    <div id="GroupList_Content" class="container">
+                                        These are the reserved ports regarding <strong>Port Forwarding.</strong>
+                                        <br>
+                                        There are 65535 ports in total.
+                                        <br><br>
+                                        <ul>
+                                            <li><strong>1</strong>: TCP Port Service Multiplexer (TCPMUX)</li>
+                                            <li><strong>5</strong>: Remote Job Entry (RJE)</li>
+                                            <li><strong>7</strong>: ECHO</li>
+                                            <li><strong>18</strong>: Message Send Protocol (MSP)</li>
+                                            <li><strong>20</strong>: FTP -- Data</li>
+                                            <li><strong>21</strong>: FTP -- Control</li>
+                                            <li><strong>22</strong>: SSH Remote Login Protocol</li>
+                                            <li><strong>23</strong>: Telnet</li>
+                                            <li><strong>25</strong>: Simple Mail Transfer Protocol (SMTP)</li>
+                                            <li><strong>29</strong>: MSG ICP</li>
+                                            <li><strong>37</strong>: Time</li>
+                                            <li><strong>42</strong>: Host Name Server (Nameserv)</li>
+                                            <li><strong>43</strong>: WhoIs</li>
+                                            <li><strong>49</strong>: Login Host Protocol (Login)</li>
+                                            <li><strong>53</strong>: Domain Name System (DNS)</li>
+                                            <li><strong>69</strong>: Trivial File Transfer Protocol (TFTP)</li>
+                                            <li><strong>70</strong>: Gopher Services</li>
+                                            <li><strong>79</strong>: Finger</li>
+                                            <li><strong>80</strong>: HTTP</li>
+                                            <li><strong>103</strong>: X.400 Standard</li>
+                                            <li><strong>108</strong>: SNA Gateway Access Server</li>
+                                            <li><strong>109</strong>: POP2</li>
+                                            <li><strong>110</strong>: POP3</li>
+                                            <li><strong>115</strong>: Simple File Transfer Protocol (SFTP)</li>
+                                            <li><strong>118</strong>: SQL Services</li>
+                                            <li><strong>119</strong>: Newsgroup (NNTP)</li>
+                                            <li><strong>137</strong>: NetBIOS Name Service</li>
+                                            <li><strong>139</strong>: NetBIOS Datagram Service</li>
+                                            <li><strong>143</strong>: Interim Mail Access Protocol (IMAP)</li>
+                                            <li><strong>150</strong>: NetBIOS Session Service</li>
+                                            <li><strong>156</strong>: SQL Server</li>
+                                            <li><strong>161</strong>: SNMP</li>
+                                            <li><strong>179</strong>: Border Gateway Protocol (BGP)</li>
+                                            <li><strong>190</strong>: Gateway Access Control Protocol (GACP)</li>
+                                            <li><strong>194</strong>: Internet Relay Chat (IRC)</li>
+                                            <li><strong>197</strong>: Directory Location Service (DLS)</li>
+                                            <li><strong>389</strong>: Lightweight Directory Access Protocol (LDAP)</li>
+                                            <li><strong>396</strong>: Novell Netware over IP</li>
+                                            <li><strong>443</strong>: HTTPS</li>
+                                            <li><strong>444</strong>: Simple Network Paging Protocol (SNPP)</li>
+                                            <li><strong>445</strong>: Microsoft-DS</li>
+                                            <li><strong>458</strong>: Apple QuickTime</li>
+                                            <li><strong>546</strong>: DHCP Client</li>
+                                            <li><strong>547</strong>: DHCP Server</li>
+                                            <li><strong>563</strong>: SNEWS</li>
+                                            <li><strong>569</strong>: MSN</li>
+                                            <li><strong>1080</strong>: Socks</li>
+                                        </ul>
+                                    </div>
+                                </div> 
                                 <div class="tab-pane fade" id="Modem-Issue3" role="tabpanel" aria-labelledby="Modem-Issue3-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit aperiam sequi saepe, inventore rerum magni ratione nulla atque excepturi omnis autem aspernatur deserunt fuga libero sed nemo, voluptatem tempora.</div></div> 
                                 <div class="tab-pane fade" id="Modem-Issue4" role="tabpanel" aria-labelledby="Modem-Issue4-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellat velit, itaque iure ducimus ut reprehenderit aliquam vero alias vel eveniet iusto modi blanditiis minus suscipit incidunt eligendi voluptatum provident!m</div></div> 
                                 <div class="tab-pane fade" id="Modem-Issue5" role="tabpanel" aria-labelledby="Modem-Issue5-list"><div id="GroupList_Content" class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure quo placeat blanditiis porro, eveniet ex fugit voluptatum aut laboriosam possimus et, dolorum ipsum? Quam autem aperiam rem magnam molestiae.</div></div> 

@@ -1,223 +1,286 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Agents Portal V2</title>
+	<title>Agents Portal: Templates</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="AgentsPortal.css">
 	<div id="NavigationBarReference"></div>
 </head>
 <body>
 	<!----------------------------------------------------------------->
-	<div class="row">
+    <div class="row">
         <div class="col-4">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action" id="list-Fault_Ticket-list" data-toggle="list" href="#list-Fault_Ticket" role="tab" aria-controls="settings">Fault Ticket</a>
-				<a class="list-group-item list-group-item-action" id="list-High_Utilization_Ticket-list" data-toggle="list" href="#list-High_Utilization_Ticket" role="tab" aria-controls="settings">High Utilization Ticket</a>
-				<a class="list-group-item list-group-item-action" id="list-Static_IP_Request_Ticket-list" data-toggle="list" href="#list-Static_IP_Request_Ticket" role="tab" aria-controls="settings">Static IP Request Ticket</a>
-				<a class="list-group-item list-group-item-action" id="list-Video_Issue_Ticket-list" data-toggle="list" href="#list-Video_Issue_Ticket" role="tab" aria-controls="settings">Video Issue Ticket</a>
-				<a class="list-group-item list-group-item-action" id="list-Coax_Cable_Request-list" data-toggle="list" href="#list-Coax_Cable_Request" role="tab" aria-controls="settings">Coax Cable Request Ticket</a>
-                <a class="list-group-item list-group-item-action" id="list-FMD-list" data-toggle="list" href="#list-FMD" role="tab" aria-controls="FMD">FMD Ticket</a>
-                <a class="list-group-item list-group-item-action" id="EmailTemplate-list" data-toggle="list" href="#EmailTemplate" role="tab" aria-controls="EmailTemplate">Email Template</a>
-                <!-- <a class="list-group-item list-group-item-action" id="placeholder-list" data-toggle="list" href="#placeholder" role="tab" aria-controls="placeholder">placeholder</a> -->
+                <a class="list-group-item list-group-item-action" id="list-Customer_Emails-list" data-toggle="list" href="#list-Customer_Emails" role="tab" aria-controls="Customer_Emails">Email Templates</a>
+                <a class="list-group-item list-group-item-action" id="list-TicketTemplates-list" data-toggle="list" href="#list-TicketTemplates" role="tab" aria-controls="TicketTemplates">Ticket Templates</a>
             </div>
         </div>
         <div class="col-8">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade" id="list-Fault_Ticket" role="tabpanel" aria-labelledby="list-Fault_Ticket-list">
-                    <div id="GroupList_Content" class="container">
-                        <strong>Title</strong>: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
-                        Issue:
-                        <br><br>  
-                        <strong>USSNR</strong>:
-                        <br>
-                        <strong>USPwr</strong>:
-                        <br>
-                        <strong>DSPwr</strong>:
-                        <br>
-                        <strong>DSSNR</strong>:  
-                        <br><br>
-                        Modem /Decoder:
-                        <br><br>
-                        Name: 
-                        <br>
-                        Number: 
-                        <br><br>
-                        The customer approved any potential charges.
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-High_Utilization_Ticket" role="tabpanel" aria-labelledby="list-High_Utilization_Ticket-list">
-                    <div id="GroupList_Content" class="container">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="form-control" id="MainTitle_Templates">CC</span>
+                <div class="tab-pane fade" id="list-Customer_Emails" role="tabpanel" aria-labelledby="list-Customer_Emails-list">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-Utilization_Email-list" data-toggle="list" href="#list-Utilization_Email" role="tab" aria-controls="settings">High Utilization Email</a>
+                                <a class="list-group-item list-group-item-action" id="list-StaticIP_Email-list" data-toggle="list" href="#list-StaticIP_Email" role="tab" aria-controls="settings">Static IP Request Email</a>
+                                <a class="list-group-item list-group-item-action" id="Customer_Email-list" data-toggle="list" href="#Customer_Email" role="tab" aria-controls="Customer_Email">Email Template Email</a>
+                                <a class="list-group-item list-group-item-action" id="list-ParentalControlArris_Email-list" data-toggle="list" href="#list-ParentalControlArris_Email" role="tab" aria-controls="ParentalControlArris_Email">Parental Control Arris Email</a>
+                                <a class="list-group-item list-group-item-action" id="list-ParentalControlCisco_Email-list" data-toggle="list" href="#list-ParentalControlCisco_Email" role="tab" aria-controls="ParentalControlCisco_Email">Parental Control Cisco Email</a>
                             </div>
-                            <input type="text" readonly class="form-control alert-primary" id="TemplatesCC_Utilization" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net">
-                            <button onclick="Utilization_CC_Copying()">Copy CC</button>
                         </div>
-                        <strong>Title:</strong> High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
-                        <br><br>
-                        Dear Engineers,
-                        <br><br>
-                        High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
-                        <br><br>
-                        <strong>SLA</strong>:
-                        <br><br>
-                        <strong>CMTS Command</strong>
-                        <br>
-                        15/0 1 55.62 40.04 72% - -
-                        <br>
-                        15/1 1 55.62 40.04 72% - -
-                        <br>
-                        15/2 1 55.62 40.04 72% - -
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-Static_IP_Request_Ticket" role="tabpanel" aria-labelledby="list-Static_IP_Request_Ticket-list">
-                    <div id="GroupList_Content" class="container">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
-							<input type="text" readonly class="form-control alert-primary" id="TemplatesCC_StaticIP" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net"> 
-							<button onclick="static_IP_Copying()">Copy CC</button>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-Utilization_Email" role="tabpanel" aria-labelledby="list-Utilization_Email-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="form-control" id="MainTitle_Templates">CC</span>
+                                            </div>
+                                            <input type="text" readonly class="form-control alert-primary" id="TemplatesCC_Utilization" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, engineers@cablenetcy.net">
+                                            <button onclick="Utilization_CC_Copying()">Copy CC</button>
+                                        </div>
+                                        <strong>Title:</strong> High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
+                                        <br><br>
+                                        Dear Engineers,
+                                        <br><br>
+                                        High utilization on [<strong>Node</strong>] [<strong>Cards</strong>] at [<strong>Time</strong>]
+                                        <br><br>
+                                        <strong>SLA</strong>:
+                                        <br><br>
+                                        <strong>CMTS Command</strong>
+                                        <br>
+                                        15/0 1 55.62 40.04 72% - -
+                                        <br>
+                                        15/1 1 55.62 40.04 72% - -
+                                        <br>
+                                        15/2 1 55.62 40.04 72% - -
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-StaticIP_Email" role="tabpanel" aria-labelledby="list-StaticIP_Email-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
+                                            <input type="text" readonly class="form-control alert-primary" id="TemplatesCC_StaticIP" value="an.andreou@cablenetcy.net, ts@cablenetcy.net, c.aristidou@cablenetcy.net"> 
+                                            <button onclick="static_IP_Copying()">Copy CC</button>
+                                        </div>
+                                        <strong>Title</strong>: Static IP Request
+                                        <br><br>
+                                        Customer below has requested a retail static IP for remote access to their server
+                                        <br><br>
+                                        Product added on SLA.
+                                        <br><br>
+                                        Number: 
+                                        <br>
+                                        Account:
+                                        <br> 
+                                        Contact: 
+                                        <br><br>
+                                        Please proceed accordingly and let me know.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Customer_Email" role="tabpanel" aria-labelledby="Customer_Email-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <strong>Title</strong>: Email Template [<strong>SLA</strong>]
+                                        <br><br>
+                                        <strong>Dear Valued Customer,</strong>
+                                        <br><br>
+                                        <br><br>
+                                        --[Message Here]--
+                                        <br><br>
+                                        <br><br>
+                                        <strong>Kind Regards,</strong>
+                                        <br>
+                                        <strong>Cablenet Technical Support Team</strong>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-ParentalControlArris_Email" role="tabpanel" aria-labelledby="list-ParentalControlArris_Email-list">
+                                    <div id="GroupList_Content" class="container">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa aspernatur provident labore eveniet delectus minus nulla sunt laudantium molestias. Maiores provident deleniti aliquid adipisci necessitatibus itaque velit, dignissimos aspernatur.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-ParentalControlCisco_Email" role="tabpanel" aria-labelledby="list-ParentalControlCisco_Email-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <strong>Title:</strong> Modem Cisco [Parental Control Guide]
+                                        <br><br>
+                                        Dear Valued Customer,
+                                        <br><br>
+                                        Here are some instructions on how to block adult content on our devices/modem while using alternative DNS addresses via OpenDNS.
+                                        <br><br>
+                                        For the Cisco modem you have to:
+                                        <br>
+                                        1) Open a Browser (Google Chrome/Firefox/Safari etc)
+                                        <br>
+                                        2) On the address bar type: 192.168.0.1
+                                        <br><br>
+                                        User Name: admin
+                                        <br>
+                                        Password: (empty)
+                                        <br><br>
+                                        3) Click on <strong>Log in</strong>
+                                        <br>
+                                        4) Go to Status & then click on Lan Setup and change:
+                                        <br>
+                                        LAN 1 Static DNS 1 to: 208.67.220.123
+                                        <br>
+                                        LAN 1 Static DNS 2 to: 208.67.222.123
+                                        <br><br>
+                                        Click Save Settings, the modem will restart automatically
+                                        and you have enabled Parental Control for all connected devices.
+                                        <br><br>
+                                        Best regards,
+                                        Cablenet Technical Support                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong>Title</strong>: Static IP Request
-						<br><br>
-						Customer below has requested a retail static IP for remote access to their server
-						<br><br>
-						Product added on SLA.
-						<br><br>
-						Number: 
-						<br>
-						Account:
-						<br> 
-						Contact: 
-						<br><br>
-						Please proceed accordingly and let me know.
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-Video_Issue_Ticket" role="tabpanel" aria-labelledby="list-Video_Issue_Ticket-list">
-                    <div id="GroupList_Content" class="container">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
-						    <input type="text" class="form-control alert-primary" id="myInput" value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
-						    <button onclick="TemplatesCC_Video()">Copy CC</button>
+                <div class="tab-pane fade" id="list-TicketTemplates" role="tabpanel" aria-labelledby="list-TicketTemplates-list">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-Fault_Ticket-list" data-toggle="list" href="#list-Fault_Ticket" role="tab" aria-controls="settings">Fault Ticket</a>
+                                <a class="list-group-item list-group-item-action" id="list-Video_Issue_Ticket-list" data-toggle="list" href="#list-Video_Issue_Ticket" role="tab" aria-controls="settings">Video Issue Ticket</a>
+                                <a class="list-group-item list-group-item-action" id="list-FMD-list" data-toggle="list" href="#list-FMD" role="tab" aria-controls="FMD">FMD Ticket</a>
+                                <a class="list-group-item list-group-item-action" id="list-Coax_Cable_Request-list" data-toggle="list" href="#list-Coax_Cable_Request" role="tab" aria-controls="settings">Coax Cable Request Ticket</a>
+                            </div>
                         </div>
-                        <strong>Title</strong>: Issue with [<strong>Channel</strong>]
-                        <br><br>
-                        Dear Video,
-                        <br><br>
-                        The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
-                        following message: "<strong>Error Message</strong>".
-                        <br><br>
-                        We tried reproducing the error but everything was working on our side. We proceeded with:
-                        <br><br>
-                        1) Factory Reset (Modem & Decoder) 
-                        <br>
-                        2) Replaced the ethernet cable & Modem ethernet port
-                        <br>
-                        3) Made sure the decoder's directly connected on the modem
-                        <br>
-                        4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
-                        <br><br>
-                        Please investigate and inform me on how to proceed.
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-Coax_Cable_Request" role="tabpanel" aria-labelledby="list-Coax_Cable_Request-list">
-                    <div id="GroupList_Content" class="container">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
-							<input type="text" class="form-control alert-primary" id="Coax_Request_CC" 
-							value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
-							<button onclick="TemplatesCC_Coax()">Copy CC</button>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-Fault_Ticket" role="tabpanel" aria-labelledby="list-Fault_Ticket-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <strong>Title</strong>: [<strong>Level</strong>] [<strong>SLA</strong>] Fault Description
+                                        Issue:
+                                        <br><br>  
+                                        <strong>USSNR</strong>:
+                                        <br>
+                                        <strong>USPwr</strong>:
+                                        <br>
+                                        <strong>DSPwr</strong>:
+                                        <br>
+                                        <strong>DSSNR</strong>:  
+                                        <br><br>
+                                        Modem /Decoder:
+                                        <br><br>
+                                        Name: 
+                                        <br>
+                                        Number: 
+                                        <br><br>
+                                        The customer approved any potential charges.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-FMD" role="tabpanel" aria-labelledby="list-FMD-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
+                                            <input type="text" class="form-control alert-primary" id="FMD_CC" 
+                                            value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
+                                            <button onclick="TemplatesCC_FMD()">Copy CC</button>
+                                        </div>
+                                        <strong>Title</strong>: FMD Ticket [<strong>SLA</strong>]
+                                        <br><br>
+                                        
+                                        <h5><strong>Landlines Issues:</strong></h5>
+                                        1) Issue?
+                                        <br>
+                                        2) When did the issue start? 
+                                        <br>
+                                        3) Timestamp of the issue?
+                                        <br>
+                                        4) Tone/Pulse?
+                                        <br>
+                                        5) Issue with Incoming or Outgoing Calls?
+                                        <br>
+                                        6) Issue from ALL Incoming / Outgoing Calls?
+                                        <br>
+                                        7) Issue from specific ISP?
+                                        <br>
+                                        6) Call being terminated?
+                                        <br><br>
+                                        
+                                        <h5><strong>PBX Issues:</strong></h5>
+                                        1) Issue?
+                                        <br>
+                                        2) When did the issue start? 
+                                        <br>
+                                        3) Timestamp of the issue?
+                                        <br>
+                                        4) Issue with Incoming or Outgoing Calls?
+                                        <br>
+                                        5) Issue from ALL Incoming / Outgoing Calls?
+                                        <br>
+                                        6) Issue from specific ISP?
+                                        <br>
+                                        7) Message received (PBX Message / Cablenet Message)?
+                                        <br>
+                                        8) Call being terminated?
+                                        <br>
+                                        9) PBX green in Safari?
+                                        <br>
+                                        10) PBX connected on port 1 of modem?
+                                        <br>
+                                        11) In-Company Calls between extensions?
+                                        <br>
+                                        12) Configuration Changes?
+                                        <br><br>
+                                        <strong>Extension:</strong>
+                                        <br>
+                                        <strong>Name:</strong>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-Video_Issue_Ticket" role="tabpanel" aria-labelledby="list-Video_Issue_Ticket-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
+                                            <input type="text" class="form-control alert-primary" id="myInput" value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
+                                            <button onclick="TemplatesCC_Video()">Copy CC</button>
+                                        </div>
+                                        <strong>Title</strong>: Issue with [<strong>Channel</strong>]
+                                        <br><br>
+                                        Dear Video,
+                                        <br><br>
+                                        The Customer reported several times that through "Catchup Fast-Forwarding" is receiving the
+                                        following message: "<strong>Error Message</strong>".
+                                        <br><br>
+                                        We tried reproducing the error but everything was working on our side. We proceeded with:
+                                        <br><br>
+                                        1) Factory Reset (Modem & Decoder) 
+                                        <br>
+                                        2) Replaced the ethernet cable & Modem ethernet port
+                                        <br>
+                                        3) Made sure the decoder's directly connected on the modem
+                                        <br>
+                                        4) Conax <strong>(Pair & Sync)</strong> and <strong>Vod (Sync & Channel Sync)</strong>
+                                        <br><br>
+                                        Please investigate and inform me on how to proceed.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-Coax_Cable_Request" role="tabpanel" aria-labelledby="list-Coax_Cable_Request-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
+                                            <input type="text" class="form-control alert-primary" id="Coax_Request_CC" 
+                                            value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
+                                            <button onclick="TemplatesCC_Coax()">Copy CC</button>
+                                        </div>
+                                        <strong>Title</strong>: Coax Cable Request [<strong>SLA</strong>]
+                                        <br><br>
+                                        The customer requested a new coax cable [<strong>Amount of meters</strong>] for their TV / Modem.
+                                        <br><br>
+                                        The customer approved the charge of (Amount/Meter) for their cable.
+                                        <br><br>
+                                        Customer Name:
+                                        <br>
+                                        Customer SLA:
+                                        <br>
+                                        Customer Phone:
+                                        <br>
+                                        Store:
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <strong>Title</strong>: Coax Cable Request [<strong>SLA</strong>]
-						<br><br>
-						The customer requested a new coax cable [<strong>Amount of meters</strong>] for their TV / Modem.
-						<br><br>
-						The customer approved the charge of (Amount/Meter) for their cable.
-						<br><br>
-						Customer Name:
-						<br>
-						Customer SLA:
-						<br>
-						Customer Phone:
-						<br>
-						Store:
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-FMD" role="tabpanel" aria-labelledby="list-FMD-list">
-                    <div id="GroupList_Content" class="container">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend"><span class="form-control" id="MainTitle_Templates">CC</span></div>
-							<input type="text" class="form-control alert-primary" id="FMD_CC" 
-							value="n.andreou@cablenetcy.net, ge.constantinou@cablenetcy.net, a.retzepai@cablenetcy.net, c.argyrou@cablenetcy.net, i.procopiou@cablenetcy.net, co.georgiou@cablenetcy.net, c.tsinontas@cablenetcy.net, m.digeni@cablenetcy.net, and.christou@cablenetcy.net, io.ioannou@cablenetcy.net" readonly>
-							<button onclick="TemplatesCC_FMD()">Copy CC</button>
-                        </div>
-                        <strong>Title</strong>: Coax Cable Request [<strong>SLA</strong>]
-                        <br><br>
-                        
-						<h5><strong>Landlines Issues:</strong></h5>
-						1) Issue?
-						<br>
-						2) When did the issue start? 
-						<br>
-						3) Timestamp of the issue?
-						<br>
-						4) Tone/Pulse?
-						<br>
-						5) Issue with Incoming or Outgoing Calls?
-						<br>
-						6) Issue from ALL Incoming / Outgoing Calls?
-						<br>
-						7) Issue from specific ISP?
-						<br>
-						6) Call being terminated?
-                        <br><br>
-                        
-						<h5><strong>PBX Issues:</strong></h5>
-						1) Issue?
-						<br>
-						2) When did the issue start? 
-						<br>
-						3) Timestamp of the issue?
-						<br>
-						4) Issue with Incoming or Outgoing Calls?
-						<br>
-						5) Issue from ALL Incoming / Outgoing Calls?
-						<br>
-						6) Issue from specific ISP?
-						<br>
-						7) Message received (PBX Message / Cablenet Message)?
-						<br>
-						8) Call being terminated?
-						<br>
-						9) PBX green in Safari?
-						<br>
-						10) PBX connected on port 1 of modem?
-						<br>
-						11) In-Company Calls between extensions?
-						<br>
-						12) Configuration Changes?
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="EmailTemplate" role="tabpanel" aria-labelledby="EmailTemplate-list">
-                    <div id="GroupList_Content" class="container">
-                        <strong>Title</strong>: Email Template [<strong>SLA</strong>]
-                        <br><br>
-                        <strong>Dear Valued Customer,</strong>
-                        <br><br>
-                        <br><br>
-                        --[Message Here]--
-                        <br><br>
-                        <br><br>
-                        <strong>Kind Regards,</strong>
-                        <br>
-                        <strong>Cablenet Technical Support Team</strong>
-                    </div>
-                </div>
-                <!-- <div class="tab-pane fade" id="placeholder" role="tabpanel" aria-labelledby="placeholder-list">
-                    <div id="GroupList_Content" class="container">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, adipisci! Saepe molestias aliquam sapiente modi vel, nam, voluptatum provident pariatur aspernatur doloribus exercitationem eaque. Id debitis ab laudantium tenetur itaque!
-                    </div>
-                </div>  -->
             </div>
         </div>
     </div>
