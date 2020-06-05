@@ -22,10 +22,11 @@
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action" id="list-Utilization_Email-list" data-toggle="list" href="#list-Utilization_Email" role="tab" aria-controls="settings">High Utilization Email</a>
-                                <a class="list-group-item list-group-item-action" id="list-StaticIP_Email-list" data-toggle="list" href="#list-StaticIP_Email" role="tab" aria-controls="settings">Static IP Request Email</a>
-                                <a class="list-group-item list-group-item-action" id="Customer_Email-list" data-toggle="list" href="#Customer_Email" role="tab" aria-controls="Customer_Email">Email Template Email</a>
-                                <a class="list-group-item list-group-item-action" id="list-ParentalControlArris_Email-list" data-toggle="list" href="#list-ParentalControlArris_Email" role="tab" aria-controls="ParentalControlArris_Email">Parental Control Arris Email</a>
-                                <a class="list-group-item list-group-item-action" id="list-ParentalControlCisco_Email-list" data-toggle="list" href="#list-ParentalControlCisco_Email" role="tab" aria-controls="ParentalControlCisco_Email">Parental Control Cisco Email</a>
+                                <a class="list-group-item list-group-item-action" id="list-StaticIP_Email-list" data-toggle="list" href="#list-StaticIP_Email" role="tab" aria-controls="settings">Static IP Request</a>
+                                <a class="list-group-item list-group-item-action" id="Customer_Email-list" data-toggle="list" href="#Customer_Email" role="tab" aria-controls="Customer_Email">Customer Email Template</a>
+                                <a class="list-group-item list-group-item-action" id="list-ParentalControlArris_Email-list" data-toggle="list" href="#list-ParentalControlArris_Email" role="tab" aria-controls="ParentalControlArris_Email">Parental Control for Arris</a>
+                                <a class="list-group-item list-group-item-action" id="list-ParentalControlCisco_Email-list" data-toggle="list" href="#list-ParentalControlCisco_Email" role="tab" aria-controls="ParentalControlCisco_Email">Parental Control for Cisco</a>
+                                <a class="list-group-item list-group-item-action" id="list-BridgeMode1652_2492-list" data-toggle="list" href="#list-BridgeMode1652_2492" role="tab" aria-controls="BridgeMode1652_2492">Bridge Mode on Arris (TG1652 & TG2492)</a>
                             </div>
                         </div>
                         <div class="col-8">
@@ -95,7 +96,38 @@
                                 </div>
                                 <div class="tab-pane fade" id="list-ParentalControlArris_Email" role="tabpanel" aria-labelledby="list-ParentalControlArris_Email-list">
                                     <div id="GroupList_Content" class="container">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa aspernatur provident labore eveniet delectus minus nulla sunt laudantium molestias. Maiores provident deleniti aliquid adipisci necessitatibus itaque velit, dignissimos aspernatur.
+                                        <strong>Title:</strong> Modem Arris [Parental Control Guide]
+                                        <br><br>
+                                        Dear Valued Customer,
+                                        <br><br>
+                                        Here are the instructions on how to block adult content on our devices/modem while using alternative DNS addresses via OpenDNS.
+                                        <br><br>
+                                        For the Arris modem you have to:
+                                        <ol>
+                                            <li>Open a Browser (Google Chrome/Firefox/Safari etc)</li>
+                                            <li
+                                                >On the address bar type: 192.168.0.1
+                                                <ul>
+                                                    <li> User Name: admin (Lowercase Letters)</li>
+                                                    <li> Password: password (Lowercase Letters)</li>
+                                                </ul>
+                                            </li>
+                                            <li>Click on <strong>Apply</strong></li>
+                                            <li>Click on Lan Setup</li>
+                                            <li>
+                                                Select Enable DNS Override and add:
+                                                <ul>
+                                                    <li>Primary DNS Server IP to: <strong>208.67.220.123</strong></li>
+                                                    <li>Secondary DNS Server IP to: <strong>208.67.222.123</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>Click on Apply</li>
+                                        </ol>
+                                        The modem will restart automatically and you have parental control enabled for all connected devices
+                                        <br><br>
+                                        Best regards,
+                                        <br>
+                                        Cablenet Technical Support
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="list-ParentalControlCisco_Email" role="tabpanel" aria-labelledby="list-ParentalControlCisco_Email-list">
@@ -104,31 +136,90 @@
                                         <br><br>
                                         Dear Valued Customer,
                                         <br><br>
-                                        Here are some instructions on how to block adult content on our devices/modem while using alternative DNS addresses via OpenDNS.
+                                        Here are the instructions on how to block adult content on our devices/modem while using alternative DNS addresses via OpenDNS.
                                         <br><br>
                                         For the Cisco modem you have to:
-                                        <br>
-                                        1) Open a Browser (Google Chrome/Firefox/Safari etc)
-                                        <br>
-                                        2) On the address bar type: 192.168.0.1
-                                        <br><br>
-                                        User Name: admin
-                                        <br>
-                                        Password: (empty)
-                                        <br><br>
-                                        3) Click on <strong>Log in</strong>
-                                        <br>
-                                        4) Go to Status & then click on Lan Setup and change:
-                                        <br>
-                                        LAN 1 Static DNS 1 to: 208.67.220.123
-                                        <br>
-                                        LAN 1 Static DNS 2 to: 208.67.222.123
-                                        <br><br>
-                                        Click Save Settings, the modem will restart automatically
-                                        and you have enabled Parental Control for all connected devices.
+                                        <ol>
+                                            <li>Open a Browser (Google Chrome/Firefox/Safari etc)</li>
+                                            <li
+                                                >On the address bar type: 192.168.0.1
+                                                <ul>
+                                                    <li> User Name: admin (Lowercase Letters)</li>
+                                                    <li> Password: (empty)</li>
+                                                </ul>
+                                            </li>
+                                            <li>Click on <strong>Log in</strong></li>
+                                            <li>
+                                                Go to Status & then click on Lan Setup and change:
+                                                <ul>
+                                                    <li>LAN 1 Static DNS 1 to: <strong>208.67.220.123</strong></li>
+                                                    <li>LAN 1 Static DNS 2 to: <strong>208.67.222.123</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>Click Save Settings.</li>
+                                        </ol>
+                                        The modem will restart automatically and you have parental control enabled for all connected devices
                                         <br><br>
                                         Best regards,
-                                        Cablenet Technical Support                                    </div>
+                                        <br>
+                                        Cablenet Technical Support                                    
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-BridgeMode1652_2492" role="tabpanel" aria-labelledby="list-BridgeMode1652_2492-list">
+                                    <div id="GroupList_Content" class="container">
+                                        <strong>Title:</strong> Bridge Mode
+                                        <br><br>
+                                        Dear Valued Customer,
+                                        <br><br>
+                                        Here are the instructions on how to set your modem to Bridge Mode.
+                                        <br>
+                                        <ol>
+                                            <li>Connect your device with ethernet cable to our modem.</li>
+                                            <li
+                                                >On the address bar type: 192.168.0.1
+                                                <ul>
+                                                    <li> User Name: admin (Lowercase Letters)</li>
+                                                    <li> Password: (empty)</li>
+                                                </ul>
+                                            </li>
+                                            <li>In Basic Setup, disable both 2,4GHz & 5GHz WiFi</li>
+                                            <li>
+                                                in Wan Setup, select Dynamic & write down:
+                                                <ul>
+                                                    <li>IP Address</li>
+                                                    <li>Subnet Mask</li>
+                                                    <li>Gateway Address</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Then Select Static and enable Static IP (Insert what you have from Dynamic settings):
+                                                <ul>
+                                                    <li>Primary DNS: <strong>213.140.208.226</strong></li>
+                                                    <li>Secondary DNS: <strong>213.140.209.226</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>Click on Apply</li>
+                                            <li>
+                                                In Wan Setup, select Dynamic and then:
+                                                <ol>
+                                                    <li>Disable DHCP</li>
+                                                    <li>Select Apply</li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                in Lan Setup:
+                                                <ol>
+                                                    <li>Disable DHCP Server</li>
+                                                    <li>NAT --> Change "RoutedWithNAT" to "Bridged"</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        Wait for the changes to apply and restart your modem. It should be in Bridge mode  
+                                        <br><br>
+                                        Best regards,
+                                        <br>
+                                        Cablenet Technical Support
+                                    </div>
                                 </div>
                             </div>
                         </div>
