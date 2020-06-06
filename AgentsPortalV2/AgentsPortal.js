@@ -7,7 +7,7 @@ html = '\
             <span class="navbar-toggler-icon"></span>\
         </button>\
         <div class="collapse navbar-collapse" id="navbarNav">\
-            <ul class="navbar-nav nav-fill">\
+            <ul class="navbar-nav d-flex justify-content-between">\
                 <li class="nav-item"><a class="nav-link" href="Index.html"> Home </a></li>\
                 <li class="nav-item"><a class="nav-link" href="Retail.html"> Retail </a></li>\
                 <li class="nav-item"><a class="nav-link disabled" href="Business.html"> Business (Coming Soon) </a></li>\

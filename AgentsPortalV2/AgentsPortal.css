@@ -3,11 +3,16 @@
 #NavigationBar{ background-color:  #5F2C88!important;}
 
 .nav-link{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
+    outline: none;
+    width: max-content;
+}
+.nav-item{
+    width: max-content;
 }
 
-.alert{  margin-bottom: 0px!important;}
+.alert{ margin-bottom: 0px!important;}
 
 .navbar-nav{
     width: 100%;
