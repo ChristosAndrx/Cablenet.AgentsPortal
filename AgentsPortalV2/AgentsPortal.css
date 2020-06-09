@@ -1,23 +1,29 @@
-.CablenetLogo{ width: 250px;}
+.CablenetLogo{ width: 250px; }
+.list-group-item{ min-width: 100px; }
+.alert{ margin-bottom: 0px!important; }
+.nav-item{ width: max-content; }
+.navbar-nav{ width: 100%; }
+.nav-link{ font-size: 28px; font-weight: 700; outline: none; width: max-content;}
+.list-group-item{ min-width: fit-content;}
+.row{ margin-right: 0%}
 
+
+/* div.col-8{ padding-right: 0%;} */
+#Retail_TelephonyButton{ width: 190px; margin-right: 150px; }
+#AgentTools_TableFormatting1{width: 250px;}
+#TableTitle{ text-align: center;}
 #NavigationBar{ background-color:  #5F2C88!important;}
-
-.nav-link{
-    font-size: 28px;
-    font-weight: 700;
-    outline: none;
-    width: max-content;
-}
-.nav-item{
-    width: max-content;
-}
-
-.alert{ margin-bottom: 0px!important;}
-
-.navbar-nav{
-    width: 100%;
-}
-
+#AgentTools_TableFormatting2{ width: 350px;}
+@media (max-width: 956px){
+    #Retail_TelephonyButton {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }}
+@media (max-width: 1631px){
+    #Retail_TelephonyButton{
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }}
 #GroupList_Content{   
     max-width: 100%;
     border: solid;
@@ -29,32 +35,5 @@
     padding: 15px;
 }
 
-#Retail_TelephonyButton{
-    width: 190px;
-    margin-right: 150px;
-}
-.list-group-item{ min-width: fit-content;}
 
-div.col-8{ padding-right: 0%;}
 
-.row{ margin-right: 0%}
-
-.list-group-item{ min-width: 100px;}
-
-#TableTitle{ text-align: center;}
-
-#AgentTools_TableFormatting1{width: 250px;}
-
-#AgentTools_TableFormatting2{ width: 350px;}
-@media (max-width: 956px){
-    #Retail_TelephonyButton {
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }
-}
-@media (max-width: 1631px){
-    #Retail_TelephonyButton{
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }
-}
