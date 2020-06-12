@@ -9,9 +9,9 @@
 <body>
 	<!----------------------------------------------------------------->
 
-	
-	<div id="CardTesting" class="card" style="width: 20rem;">
-		<img src="Resources/Modems/Arris1652.png" class="card-img-top" alt="...">
+	<br><br>
+	<div id="Cards" class="card" style="width: 20rem;">
+		<img id="ModImage_1652" src="Resources/Modems/Arris1652/Arris1652.png" class="card-img-top" alt="...">
 		<div class="card-body">
 		  <p class="card-text">
 			  <strong>Gateway:</strong> 192.168.0.1
@@ -20,9 +20,27 @@
 			  <br>
 			  <strong>password:</strong> password
 			  <br>
-			  <strong>Default Password:</strong> Pre-Shared Key
+			  <strong>Default Password:</strong> Preshared Key
 		  </p>
 		  <button id="ModalTestingButtons" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Arris1652">Arris 1652 Information</button>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div id="Cards" class="card" style="width: 20rem;">
+		<img id="ModImage_2492" src="Resources/Modems/Arris2492/Arris2492.png" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <p class="card-text">
+			  <strong>Gateway:</strong> 192.168.0.1
+			  <br>
+			  <strong>username:</strong> admin
+			  <br>
+			  <strong>password:</strong> password
+			  <br>
+			  <strong>Default Password:</strong> Preshared Key
+		  </p>
+		  <button id="ModalTestingButtons" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Arris1652">Arris 2492 Information</button>
 		</div>
 	</div>
 
@@ -36,26 +54,39 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				</div>
 				<div id="ModalBody" class="modal-body">
-					<img id="ModalImage" src="Resources/Modems/1200px-Cait.jpg">
-					<u>Maximum speed:</u>
-					<br> 
-					1200 Mbps
-					<br><br>
-					<u>Dual Band:</u>
-					<br>
-					2.4Ghz / 5Ghz
-					<br><br>
-					<u>Interface Credentials:</u>
+					<img id="ModalImage2" src="Resources/Modems/Placeholder.jpg">
 					<ul>
-					<li>username: <strong>admin</strong></li>
-					<li>password: <strong>password</strong></li>
-					</ul>
-					<u>DOCSIS Compliance:</u> 
-					<ul>
-						<li>DOCSIS 1.0</li>
-						<li>DOCSIS 1.1</li>
-						<li>DOCSIS 2.0</li>
-						<li>DOCSIS 3.0</li>
+						<li>
+							<h4>Front Panel Indicators:</h4>
+							<ol>
+								<li><strong>Power:</strong> Indicates whether AC power is available to the unit.</li>
+								<li><strong>US / DS:</strong>Indicates upstream / downstream connectivity.</li>
+								<li><strong>Online:</strong> Indicates Internet data transmission status.</li>
+								<li><strong>2.4 GHz:</strong> Indicates the status of the 2.4 GHz wireless LAN.</li>
+								<li><strong>5 GHz:</strong> Indicates the status of the 5 GHz wireless LAN.</li>
+								<li><strong>Tel 1:</strong> Indicates the status of telephone line 1.</li>
+								<li><strong>Tel 2:</strong> Indicates the status of telephone line 2.</li>
+								<li><strong>WPS Button / LED:</strong>
+									<ul>
+										<li>Begins associating the telephony gateway with a wireless device.</li>
+										<li>LED indicates that WPS (Wireless Protected Setup) is active.</li>
+									</ul>	
+									 </li>
+								<li><strong>USB:</strong> Disabled</li>
+							</ol>
+							<br><br>
+						</li>
+						<li>
+							<h4>Rear Panel Indicators:</h4>
+							<ol>
+								<li><strong>Reset Button:</strong> Factory resets the device if pressed with a non-metalic object.</li>
+								<li><strong>telephone 1:</strong> Connector for the first phone line.</li>
+								<li><strong>telephone 2:</strong> Connector for the second phone line.</li>
+								<li><strong>Ethernet 1-4:</strong> Connectors for ethernet cables.</li>
+								<li><strong>Coax Cable:</strong> Connector for the coax cable.</li>
+								<li><strong>Power:</strong> Connector for the power cable.</li>
+							</ol>
+						</li>
 					</ul>
 				</div>
 				<div class="modal-footer">
