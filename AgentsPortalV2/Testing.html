@@ -8,8 +8,78 @@
 </head>
 <body>
 	<!----------------------------------------------------------------->
-	
 
+	
+	<div id="CardTesting" class="card" style="width: 20rem;">
+		<img src="Resources/Modems/Arris1652.png" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <p class="card-text">
+			  <strong>Gateway:</strong> 192.168.0.1
+			  <br>
+			  <strong>username:</strong> admin
+			  <br>
+			  <strong>password:</strong> password
+			  <br>
+			  <strong>Default Password:</strong> Pre-Shared Key
+		  </p>
+		  <button id="ModalTestingButtons" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Arris1652">Arris 1652 Information</button>
+		</div>
+	</div>
+
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Placeholder">Launch static backdrop modal</button> -->
+
+  	<div class="modal fade" id="Arris1652" data-backdrop="static" data-keyboard="true" tabindex="-1" role="dialog" aria-labelledby="Arris1652Label" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+	  		<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Arris1652Label">Arris 1652</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div id="ModalBody" class="modal-body">
+					<img id="ModalImage" src="Resources/Modems/1200px-Cait.jpg">
+					<u>Maximum speed:</u>
+					<br> 
+					1200 Mbps
+					<br><br>
+					<u>Dual Band:</u>
+					<br>
+					2.4Ghz / 5Ghz
+					<br><br>
+					<u>Interface Credentials:</u>
+					<ul>
+					<li>username: <strong>admin</strong></li>
+					<li>password: <strong>password</strong></li>
+					</ul>
+					<u>DOCSIS Compliance:</u> 
+					<ul>
+						<li>DOCSIS 1.0</li>
+						<li>DOCSIS 1.1</li>
+						<li>DOCSIS 2.0</li>
+						<li>DOCSIS 3.0</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+		  			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+	  		</div>
+		</div>
+	</div>
+	<!-- <div class="modal fade" id="Placeholder" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="PlaceholderLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="PlaceholderLabel">Modal title</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      			</div>
+      			<div class="modal-body">
+        			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas eveniet voluptatibus cumque rerum dolore veritatis adipisci, itaque voluptate. Minima fugit exercitationem accusamus laborum optio rem dolor natus. Consequatur, esse dicta.
+      			</div>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+    		</div>
+  		</div>
+	</div> -->
     <!----------------------------------------------------------------->
 	<script src="AgentsPortal.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

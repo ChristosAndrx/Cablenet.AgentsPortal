@@ -10,6 +10,7 @@
 body{min-width: 806px;}
 
 div.col-8{ padding-right: 0%;}
+#ModalText{ word-wrap: break-word;}
 #Retail_TelephonyButton{ width: 190px; margin-right: 150px; }
 #AgentTools_TableFormatting1{width: 250px;}
 #TableTitle{ text-align: center;}
@@ -19,6 +20,11 @@ div.col-8{ padding-right: 0%;}
     #Retail_TelephonyButton {
         margin-bottom: 10px;
         margin-right: 0px;
+    }
+    #ModalImage{
+        display: block;
+        width: auto;
+        min-width: 430px;
     }}
 @media (max-width: 1631px){
     #Retail_TelephonyButton{
@@ -44,4 +50,28 @@ div.col-8{ padding-right: 0%;}
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+#Modem{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+#ModalTestingButtons{
+    margin-left: 5px;
+}
+
+#CardTesting,
+.modal-content{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    border-color: #cce5ff;
+}
+
+#ModalImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
