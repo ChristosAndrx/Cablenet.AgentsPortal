@@ -15,9 +15,8 @@
                 <a class="list-group-item list-group-item-action" id="Decoders-list" data-toggle="list" href="#Decoders" role="tab" aria-controls="Decoders">Decoders & TV Issues</a>
                 <a class="list-group-item list-group-item-action" id="Telephony-list" data-toggle="list" href="#Telephony" role="tab" aria-controls="Telephony">Telephony (Landline & Mobile)</a>
                 <a class="list-group-item list-group-item-action" id="Other-list" data-toggle="list" href="#Other" role="tab" aria-controls="Other">Other</a>
-                <!-- 
-                    <a class="list-group-item list-group-item-action" id="AmplifierPower-list" data-toggle="list" href="#AmplifierPower" role="tab" aria-controls="AmplifierPower">AmplifierPower</a> 
-                -->
+                <!-- <a class="list-group-item list-group-item-action" id="placeholder-list" data-toggle="list" href="#placeholder" role="tab" aria-controls="placeholder">placeholder</a>  -->
+
             </div>
         </div>
         <div class="col-8">
@@ -26,6 +25,7 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="ModemGuides-list" data-toggle="list" href="#ModemGuides" role="tab" aria-controls="ModemGuides">Modem Guides</a> 
                                 <a class="list-group-item list-group-item-action" id="BridgeMode-list" data-toggle="list" href="#BridgeMode" role="tab" aria-controls="BridgeMode">Bridge Mode Arris (1652 & 2492)</a> 
                                 <a class="list-group-item list-group-item-action" id="PortForwarding-list" data-toggle="list" href="#PortForwarding" role="tab" aria-controls="PortForwarding">Port Forwarding</a>
                                 <a class="list-group-item list-group-item-action" id="StaticIP-list" data-toggle="list" href="#StaticIP" role="tab" aria-controls="StaticIP">Static IP</a>
@@ -33,6 +33,126 @@
                         </div>
                         <div class="col-8">
                             <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="ModemGuides" role="tabpanel" aria-labelledby="ModemGuides-list">
+                                    <div id="GroupList_Content" class="container">
+
+                                        <button id="ModalButtons" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Arris1652">Arris 1652 / Arris 2492</button>
+                                        <!-- Beginning of 1652 / 2492 Modem Data ------------------------------------------------------------------------------------------------------------------------->
+                                        <div class="modal fade" id="Arris1652" data-backdrop="static" data-keyboard="true" tabindex="-1" role="dialog" aria-labelledby="Arris1652Label" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="Arris1652Label">Arris 1652: Specifications / Interfaces / Guides</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </div>
+                                                    <div id="ModalBody" class="modal-body">
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                        <h4>Front Panel Indicators (Upwards to Downwards):</h4>
+                                                        <div id="Encapsulated">
+                                                            <p>
+                                                                <ol>
+                                                                    <li><strong>Power:</strong> Indicates whether AC power is available to the unit.</li>
+                                                                    <li><strong>US / DS:</strong>Indicates upstream / downstream connectivity.</li>
+                                                                    <li><strong>Online:</strong> Indicates Internet data transmission status.</li>
+                                                                    <li><strong>2.4 GHz:</strong> Indicates the status of the 2.4 GHz wireless LAN.</li>
+                                                                    <li><strong>5 GHz:</strong> Indicates the status of the 5 GHz wireless LAN.</li>
+                                                                    <li><strong>Tel 1:</strong> Indicates the status of telephone line 1.</li>
+                                                                    <li><strong>Tel 2:</strong> Indicates the status of telephone line 2.</li>
+                                                                    <li><strong>WPS Button / LED:</strong>
+                                                                        <ul>
+                                                                            <li>Begins associating the telephony gateway with a wireless device.</li>
+                                                                            <li>LED indicates that WPS (Wireless Protected Setup) is active.</li>
+                                                                        </ul>	
+                                                                    </li>
+                                                                    <li><strong>USB:</strong> Disabled</li>
+                                                                </ol>
+                                                            </p>
+                                                        </div>
+                                                        <br><br>
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                            <h4>Rear Panel Indicators (Upwards to Downwards):</h4>
+                                                            <div id="Encapsulated">
+                                                                <p>
+                                                                    <ol>
+                                                                        <li><strong>Reset Button:</strong> Factory resets the device if pressed with a non-metalic object.</li>
+                                                                        <li><strong>telephone 1 (Grey Port):</strong> Connector for the first phone line.</li>
+                                                                        <li><strong>telephone 2 (Grey Port):</strong> Connector for the second phone line.</li>
+                                                                        <li><strong>Ethernet 1-4 (Yellow Ports):</strong> Connectors for ethernet cables.</li>
+                                                                        <li><strong>Coax Cable:</strong> Connector for the coax cable.</li>
+                                                                        <li><strong>Power:</strong> Connector for the power cable.</li>
+                                                                    </ol>
+                                                                </p>
+                                                            </div>
+                                                            <br><br>
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                            <h4>Gateway - Landing Page:</h4>
+                                                            <div id="Modem_InfoSettings_NoBottom">
+                                                                You can access this page by typing 192.168.0.1 in your browser's navigation bar.
+                                                                <br><br>
+                                                                <img id="NavigationPicture" src="Resources/Modems/NavigationBar.png">
+                                                                <br>
+                                                                <strong>Default Username:</strong> admin (Lowercase Letters)
+                                                                <br>
+                                                                <strong>Default Password:</strong> password (Lowercase Letters)
+                                                            </div>
+                                                            <img id="ModalImage2" src="Resources/Modems/Arris1652-2492/MainInterface.png">
+                                                            <br><br>
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                            <h4>System Basic Setup:</h4>
+                                                            <div id="Modem_InfoSettings_NoBottom">
+                                                                From this page you can:
+                                                                <br><br>
+                                                                1. Change the <strong>Gateway's default language</strong>.
+                                                                <br>
+                                                                2. Change the Wireless 2.4 GHz <strong>SSID & Preshared Key</strong> (WiFi Name / Password).
+                                                                <br>
+                                                                3. Change the Wireless 5 GHz <strong>SSID & Preshared Key</strong> (WiFi Name / Password).
+                                                                <br>
+                                                                3. Access <strong>additional settings</strong> for the 2.4 GHz & 5 GHz WiFi.
+                                                                <br>
+                                                                4. Enable / Disable the <strong>WPS Service & the associated settings</strong>.
+                                                                <br>
+                                                            </div>
+                                                            <img id="ModalImage2" src="Resources/Modems/Arris1652-2492/SecondaryInterface.png">
+                                                            <br><br>
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                            <h4>More wireless settings interface:</h4>
+                                                            <div id="Modem_InfoSettings_NoBottom">
+                                                                You can access this page by clicking on the <strong>more wireless settings</strong> option under the 2.4 GHz & 5 GHz sections of the Page.
+                                                                <br>
+                                                                From this page you can:
+                                                                <br><br>
+                                                                1. <strong>Disable the WiFi</strong> completely.
+                                                                <br>
+                                                                2. <strong>Change the SSID</strong> (WiFi Name).
+                                                                <br>
+                                                                3. <strong>Change the Preshared Key</strong> (WiFi Password).
+                                                                <br>
+                                                                4. Change <strong>Broadcasting Channel</strong>.
+                                                                <br>
+                                                                5. Change the WiFi's <strong>security Mode</strong>.
+                                                                <br>
+                                                            </div>
+                                                            <img id="ModalImage2" src="Resources/Modems/Arris1652-2492/wifisettings.png">
+                                                            <br><br>
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                        <br><br>
+                                                        <img id="ModalImage2" src="Resources/Modems/Arris1652-2492/SystemLogs.png">
+                                                        <br><br>
+                                                        <img id="ModalImage2" src="Resources/Modems/Arris1652-2492/PortForwarding.png">
+                                                        <br><br>
+                                                        <img id="ModalImage2" src="Resources/Modems/Arris1652-2492/LANSettings.png">
+                                                    <!----------------------------------------------------------------------------------------------------------------------------->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <!---Ending of 1652 / 2492 Modem Data ---------------------------------------------------------------------------------------------------------------------------->
+                                    </div>
+                                </div> 
                                 <div class="tab-pane fade" id="BridgeMode" role="tabpanel" aria-labelledby="BridgeMode-list">
                                     <div id="GroupList_Content" class="container">
                                         <ol>
@@ -264,7 +384,6 @@
                                 <a class="list-group-item list-group-item-action" id="TicketQueues-list" data-toggle="list" href="#TicketQueues" role="tab" aria-controls="TicketQueues">Ticket Queues</a>
                                 <a class="list-group-item list-group-item-action" id="Complaints-list" data-toggle="list" href="#Complaints" role="tab" aria-controls="Complaints">Complaints</a>
                                 <a class="list-group-item list-group-item-action" id="CMTS-list" data-toggle="list" href="#CMTS" role="tab" aria-controls="CMTS">CMTS commands</a>  
-                                <!-- <a class="list-group-item list-group-item-action" id="placeholder-list" data-toggle="list" href="#placeholder" role="tab" aria-controls="placeholder">placeholder</a>  -->
                             </div>
                         </div>
                         <div class="col-8">
@@ -677,9 +796,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- 
-                    <div class="tab-pane fade" id="AmplifierPower" role="tabpanel" aria-labelledby="AmplifierPower-list">...</div> 
-                -->
             </div>
         </div>
     </div>

@@ -6,92 +6,104 @@
 .nav-link{ font-size: 28px; font-weight: 700; outline: none; width: max-content;}
 .list-group-item{ min-width: fit-content;}
 .row{ margin-right: 0%}
-
+/*  */
 body{min-width: 806px;}
-
-div.col-8{ padding-right: 0%;}
-#ModalText{ word-wrap: break-word;}
-#Retail_TelephonyButton{ width: 190px; margin-right: 150px; }
-#AgentTools_TableFormatting1{width: 250px;}
-#TableTitle{ text-align: center;}
-#NavigationBar{ background-color:  #5F2C88!important;}
-#AgentTools_TableFormatting2{ width: 350px;}
-@media (max-width: 956px){
-    #Retail_TelephonyButton {
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }
-    #ModalImage{
-        display: block;
-        width: auto;
-        min-width: 430px;
-    }}
-@media (max-width: 1631px){
-    #Retail_TelephonyButton{
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }}
+div.col-8 { padding-right: 0%;}
+#ModalText { word-wrap: break-word;}
+#Retail_TelephonyButton { width: 190px; margin-right: 150px; }
+#AgentTools_TableFormatting1 {width: 250px;}
+#TableTitle { text-align: center;}
+#NavigationBar { background-color:  #5F2C88!important;}
+#ModalButtons{margin-left: 5px;}
+#AgentTools_TableFormatting2 { width: 350px;}
+/*  */
 #GroupList_Content{   
     max-width: 100%;
     min-width: 350px;
     border: solid;
-    border-width: 1px;
+    border-width: 4px;
     border-color: #cce5ff;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 100%!important;
-    padding: 15px;
-}
-#Sports4all{
+    padding: 15px;}
+#Sports4all {
     width: 100%;
     max-height: 850px;
     max-width: 490px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-}
-#Modem{
+    display: block;}
+#Modem {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    display: block; 
-}
-
-
-#ModalTestingButtons{
-    margin-left: 5px;
-}
-
-
+    display: block; }
 .modal-content{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px; 
-    border-color: #cce5ff;
-}
-
-#Cards{
+    border-color: #cce5ff;}
+#Cards {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px; 
-    border-color: #cce5ff; 
-}
-
-#ModImage_1652{
+    border: 5px solid; 
+    border-color: #cce5ff;}
+#ModImage_1652 {
     width: fit-content;
-    max-width: 100%;
-}
-
-#ModImage_2492{
+    max-width: 100%;}
+#ModImage_2492 {
     width: fit-content;
     max-width: 90%;
     padding-left: 10px;
-    padding-right: 0px;
-}
-
-#ModalImage2{
+    padding-right: 0px;}
+#NavigationPicture {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;}
+#ModalImage2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1175px;
     max-width: 100%;
     max-height: 100%;
-}
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 5px solid;
+    border-color: #cce5ff;}
+#Encapsulated {
+    width: 100%;
+    border-radius: 25px;
+    word-wrap: break-word;
+    border: 5px solid;
+    border-color: #cce5ff;}
+#Modem_InfoSettings_NoBottom {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom: none!important;
+    border: 5px solid;
+    border-color: #cce5ff;}
+/*  */
+@media (max-width: 956px) {
+        #Retail_TelephonyButton {
+            margin-bottom: 10px;
+            margin-right: 0px;
+        }
+        #ModalImage{
+            display: block;
+            width: auto;
+            min-width: 430px;
+        }}
+@media (max-width: 1631px) {
+        #Retail_TelephonyButton{
+            margin-bottom: 10px;
+            margin-right: 0px;
+        }}
