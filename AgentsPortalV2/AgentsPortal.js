@@ -8,7 +8,7 @@ html = '\
         </button>\
         <div class="collapse navbar-collapse" id="navbarNav">\
             <ul class="navbar-nav d-flex justify-content-between">\
-                <li class="nav-item"><a class="nav-link" href="Index.html"> Home </a></li>\
+                <li class="nav-item"><a class="nav-link" href="Index.html"> News </a></li>\
                 <li class="nav-item"><a class="nav-link" href="Retail.html"> Retail </a></li>\
                 <li class="nav-item"><a class="nav-link disabled" href="Business.html"> Business (Coming Soon) </a></li>\
                 <li class="nav-item"><a class="nav-link" href="Templates.html"> Templates </a></li>\
@@ -21,6 +21,7 @@ html = '\
 	Help improve Agents Portal by submitting your findings & suggestions: <a href = "mailto: c.andreou@cablenetcy.net">c.andreou@cablenetcy.net</a>\
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
 </div>\
+<div id="NavSpace"></div>\
 ';
 
 document.getElementById("NavigationBarReference").innerHTML = html;
